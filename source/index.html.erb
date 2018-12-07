@@ -1,10 +1,20 @@
+
+<% t =  data.gliomas%>
 <div id="home">
   <div id="sidebar">
     <h1>sidebar</h1>
   </div>
   <div class="main">
     <div class="container">
-      <%= partial(:'components/header1', :locals => { :text => data.gliomas.title}) %>
+      <%= partial(:'components/header1', :locals => { :text => t.title}) %>
+
+      <%= partial(:'components/header2', :locals => { :text => t.presentacion}) %>
+      <%= partial(:'components/paragraph', :locals => { :texto => t.presentacion_text, :span => "hello"}) %>
+
+
+
+      <%= partial(:'components/header2', :locals => { :text => t.objetivos}) %>
+
     </div>
   </div>
 </div>
