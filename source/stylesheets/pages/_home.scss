@@ -1,5 +1,5 @@
 #home {
-  background-color: #FAFAFA;
+
   color: $black;
   position: relative;
   align-items: center;
@@ -10,7 +10,7 @@
 
 .main{
   width:  calc(100% - 25rem);
-
+   background-color: $light-gray;
   position: absolute;
   right: 0;
   display: flex;

@@ -1,11 +1,24 @@
 .container{
-  margin: 8rem;
-  border: 1px solid red;
+  margin: 4rem ;
+  box-shadow: $box-shadow;
   background-color: $white;
-  padding-left: 10rem;
+  padding: 10rem 20rem 10rem 20rem;
   min-height: 20rem;
 
+  .text{
+    margin-top: 5rem;
 
+    p{
+      font-size: 1.4rem;
+      font-weight: 300;
+      line-height: 2.2rem;
+      text-indent: 5rem;
+    }
+
+    &__highlight{
+      color: red;
+    }
+  }
 }
 
 
