@@ -9,11 +9,32 @@
       <%= partial(:'components/header1', :locals => { :text => t.title}) %>
 
       <%= partial(:'components/header2', :locals => { :text => t.presentacion}) %>
-      <%= partial(:'components/paragraph', :locals => { :texto => t.presentacion_text, :span => "hello"}) %>
-
+      <p> <%= t.presentacion_text %> <span class="container__highlight"><%= t.presentacion_span %></span></p>
 
 
       <%= partial(:'components/header2', :locals => { :text => t.objetivos}) %>
+      <p> <%= t.objetivos_text %></p>
+
+      <%= partial(:'components/header2', :locals => { :text => t.epidemiologia}) %>
+      <p> <%= t.epidemiologia_text %></p>
+
+      <div class="card_row">
+
+      <%= partial(:'components/card', :locals => { :title => t.hipertension, :body => t.hipertension_body }) %>
+      <%= partial(:'components/card', :locals => { :title => t.hipertension, :body => t.hipertension_body }) %>
+      </div>
+      <div class="card_row">
+      <%= partial(:'components/card', :locals => { :title => t.hipertension, :body => t.hipertension_body }) %>
+      <div class="card card1">
+      <div class="card__header">
+        <h3>title </h3>
+      </div>
+      <div class="card__body">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus illum temporibus praesentium eius incidunt pariatur voluptate consequuntur necessitatibus! Asperiores consectetur ab, inventore dolorum harum, aliquam deserunt eaque voluptates eius facilis.</p>
+      </div>
+    </div>
+      </div>
+
 
     </div>
   </div>

@@ -1,0 +1,35 @@
+.card_row{
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.card{
+  width: 47%;
+  box-shadow: $box-shadow;
+  border-left: 3px solid $orange;
+  margin-top: 4rem;
+
+  &__header{
+    padding-left: 2.5rem;
+  }
+
+  h3{
+    font-family: $serif-font;
+    font-size: 1.6rem;
+    font-weight: 700;
+  }
+
+  &__body{
+    padding: 2.5rem;
+    display: none;
+
+    p{
+      font-size: 1.1rem;
+      line-height: 1.5rem;
+      margin-top: 0;
+      text-indent: 0;
+    }
+  }
+
+}
