@@ -1,0 +1,8 @@
+{
+  "name": "SNC",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:AmandaOrbe/SNC.git",
+  "author": "(Amanda Orbe) <garayomiriam@gmail.com>",
+  "license": "MIT"
+}
