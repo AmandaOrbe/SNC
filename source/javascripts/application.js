@@ -13,3 +13,16 @@ cards.forEach((card) => {
   });
 
 });
+
+
+
+// const bigImages = document.querySelectorAll('.image-big')
+
+// bigImages.forEach((bigImage) => {
+
+//   bigImage.addEventListener("click", (event) => {
+//     event.currentTarget.style.width = "100vw";
+//     event.currentTarget.style.w = "100vw";
+//   });
+
+// });

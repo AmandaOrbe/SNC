@@ -26,4 +26,33 @@
 
 }
 
+.image-modal{
+  // padding: 2rem;
+  transition: all .2s;
 
+  &__image{
+    display: flex;
+    justify-content: center;
+    // width: 80%;
+
+  }
+
+  &__text{
+    padding: 6rem 2rem 6rem 6rem;
+  }
+
+}
+
+.close-button{
+  margin-right: 3rem;
+  margin-top: 3rem;
+  opacity: 1;
+  font-weight: 300;
+  font-size: 3rem;
+}
+
+
+.image-modal-header{
+  height: 6rem;
+  width: 100%;
+}
