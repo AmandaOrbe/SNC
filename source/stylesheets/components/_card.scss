@@ -10,6 +10,7 @@
   border-left: 3px solid $orange;
   margin-top: 4rem;
 
+
   &__header{
     padding-left: 2.5rem;
   }
@@ -22,7 +23,7 @@
 
   &__body{
     padding: 2.5rem;
-    display: none;
+    // display: none;
 
     p{
       font-size: 1.1rem;
@@ -32,4 +33,11 @@
     }
   }
 
+  &__hidden{
+    height: 7rem;
+    overflow: hidden;
+  }
+
 }
+
+

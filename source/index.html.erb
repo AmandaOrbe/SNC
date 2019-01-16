@@ -11,7 +11,6 @@
       <%= partial(:'components/header2', :locals => { :text => t.presentacion}) %>
       <p> <%= t.presentacion_text %> <span class="container__highlight"><%= t.presentacion_span %></span></p>
 
-
       <%= partial(:'components/header2', :locals => { :text => t.objetivos}) %>
       <p> <%= t.objetivos_text %></p>
 
@@ -19,15 +18,13 @@
       <p> <%= t.epidemiologia_text %></p>
 
       <div class="card_row">
-
-      <%= partial(:'components/card', :locals => { :title => t.hipertension, :body => t.hipertension_body }) %>
-      <%= partial(:'components/card', :locals => { :title => t.focalidad, :body => t.focalidad_body }) %>
+        <%= partial(:'components/card', :locals => { :title => t.hipertension, :body => t.hipertension_body }) %>
+        <%= partial(:'components/card', :locals => { :title => t.focalidad, :body => t.focalidad_body }) %>
       </div>
+
       <div class="card_row">
-      <%= partial(:'components/card', :locals => { :title => t.epilepsia, :body => t.epilepsia_body }) %>
-
+        <%= partial(:'components/card', id: 'epilepsia', :locals => { :title => t.epilepsia, :body => t.epilepsia_body }) %>
       </div>
-
 
     </div>
   </div>
