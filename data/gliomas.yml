@@ -12,3 +12,5 @@ focalidad: Focalidad neurológica
 focalidad_body: Debidos a la localización específica del tumor, se producirá un déficit neurológico concreto motor, sensitivo o mixto.
 epilepsia: Epilepsia
 epilepsia_body: Son uno de los síntomas más frecuentes en gliomas de bajo grado, siendo un síntoma que llega hasta el 70-80% de los pacientes en algún momento de su evolución, siendo más frecuente en oligodendrogliomas que en astrocitomas. En el caso de los gliomas de bajo grado, debido a su lento crecimiento, puede preceder años al diagnóstico del tumor.
+incidencia_span: Los gliomas de bajo grado corresponden a aproximadamente el 15% de los tumores primarios cerebrales en el adulto, y tienen unpico de incidenciaen torno a los 35-45 años
+incidencia_text: '(Pouratian & Schiff, 2010). Su pronóstico es mejor que el de los gliomas anaplásicos y glioblastomas, pudiendo incluso en casos muy seleccionados mantener una actitud expectante. La reciente clasificación molecular ha afinado estos factores pronósticos, si bien se siguen considerando como factores de buen pronóstico los siguientes (deben cumplirse todos) (Sepúlveda-Sánchez et al., 2018):'
