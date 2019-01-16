@@ -23,10 +23,16 @@
       </div>
 
       <div class="card_row">
-        <%= partial(:'components/card', id: 'epilepsia', :locals => { :title => t.epilepsia, :body => t.epilepsia_body }) %>
+        <%= partial(:'components/card', :locals => { :title => t.epilepsia, :body => t.epilepsia_body }) %>
       </div>
 
       <p> <span class="container__highlight"><%= t.incidencia_span %></span> <%= t.incidencia_text %> </p>
+
+      <%= partial(:'components/list',  :locals => { :list_items => [t.edad, t.tamaño, t.reseccion, t.idh ]}) %>
+
+      <p><%= t.criterios  %></p>
+      <p><%= t.sospecha  %></p>
+
 
     </div>
   </div>

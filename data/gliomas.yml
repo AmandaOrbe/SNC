@@ -14,3 +14,9 @@ epilepsia: Epilepsia
 epilepsia_body: Son uno de los síntomas más frecuentes en gliomas de bajo grado, siendo un síntoma que llega hasta el 70-80% de los pacientes en algún momento de su evolución, siendo más frecuente en oligodendrogliomas que en astrocitomas. En el caso de los gliomas de bajo grado, debido a su lento crecimiento, puede preceder años al diagnóstico del tumor.
 incidencia_span: Los gliomas de bajo grado corresponden a aproximadamente el 15% de los tumores primarios cerebrales en el adulto, y tienen unpico de incidenciaen torno a los 35-45 años
 incidencia_text: '(Pouratian & Schiff, 2010). Su pronóstico es mejor que el de los gliomas anaplásicos y glioblastomas, pudiendo incluso en casos muy seleccionados mantener una actitud expectante. La reciente clasificación molecular ha afinado estos factores pronósticos, si bien se siguen considerando como factores de buen pronóstico los siguientes (deben cumplirse todos) (Sepúlveda-Sánchez et al., 2018):'
+edad: Edad < 40 años
+tamaño: Tamaño tumoral preoperatorio < 4-6cm
+reseccion: Resección completa
+idh: IDH mutado y codelección 1p/19q
+criterios: En los pacientes que cumplen estos criterios, la mediana de supervivencia puede superar los 10 años, mientras que en los que tienen factores de peor pronóstico, está en torno a 4 años (Daniels et al., 2011).
+sospecha: Una vez establecida la sospecha diagnóstica, la prueba de imagen preferida es la resonancia magnética con contraste. A diferencia de los gliomas de alto grado, los gliomas de bajo grado suelen ser hipocaptantes, con imagen hipointensa en T1 e hiperintensa en T2. Clásicamente, los oligodendrogliomas pueden presentar calcificaciones en su interior y además presentar localizaciones corticales, a diferencia de los astrocitomas, más típicos de la sustancia blanca.

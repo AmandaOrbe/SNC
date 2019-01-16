@@ -9,6 +9,7 @@
   box-shadow: $box-shadow;
   border-left: 3px solid $orange;
   margin-top: 4rem;
+  transition: all .2s;
 
 
   &__header{
@@ -36,6 +37,11 @@
   &__hidden{
     height: 7rem;
     overflow: hidden;
+  }
+
+  &:hover{
+    transform: translateY(-2px);
+    box-shadow: $box-shadow-2;
   }
 
 }
