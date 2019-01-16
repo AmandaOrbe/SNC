@@ -1,0 +1,16 @@
+.list{
+  margin-left: 9rem;
+  margin-top: 4rem;
+  list-style: none;
+  li{
+    min-height: 6rem;
+    font-weight: 100;
+    font-size: 1.4rem;
+
+  }
+  &__star{
+    color: $orange;
+    margin-right: 1rem;
+    transform: translateY(-1rem)
+  }
+}
