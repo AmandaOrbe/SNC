@@ -2,7 +2,6 @@
 //= require bootstrap
 //= require_tree .
 
+document.getElementById('epilepsia')
 
-import { hello } from 'card';
-hello();
 
