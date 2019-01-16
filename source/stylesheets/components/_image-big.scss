@@ -1,0 +1,29 @@
+.image-big{
+  margin-top: 3rem;
+  box-shadow: $box-shadow;
+  padding: 2rem;
+  transition: all .2s;
+
+  &__image{
+    display: flex;
+    justify-content: center;
+    // width: 80%;
+
+    img{
+      width: 80%;
+      height: 80%;
+    }
+  }
+
+  &__text{
+    padding: 2rem;
+  }
+
+  &:hover{
+    transform: translateY(-2px);
+    box-shadow: $box-shadow-2;
+  }
+
+}
+
+
