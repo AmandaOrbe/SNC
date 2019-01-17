@@ -1,9 +1,13 @@
 .container{
-  margin: 4rem ;
-  box-shadow: $box-shadow;
-  background-color: $white;
-  padding: 10rem 20rem 10rem 20rem;
-  min-height: 20rem;
+
+
+  .content{
+    margin: 4rem ;
+    box-shadow: $box-shadow;
+    background-color: $white;
+    padding: 10rem 20rem 10rem 20rem;
+    min-height: 20rem;
+  }
 
   h3{
     color: $orange;
@@ -25,6 +29,10 @@
 
   .margin7{
     margin-top: 7rem;
+  }
+
+  .margin-bottom7{
+    margin-bottom: 7rem;
   }
 
   .margin5{
