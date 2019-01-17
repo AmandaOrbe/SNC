@@ -1,0 +1,23 @@
+.button{
+  font-family: $serif-font;
+  padding: 1rem;
+  font-weight: 100;
+  font-weight: 1.6rem;
+   margin: 0 auto;
+   transition: all .2s ease;
+  &__comprobar{
+    background-color: $orange;
+    color: white;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: none;
+    width: 25rem;
+  }
+
+  &:hover{
+    background-color: $dark-orange;
+    margin-top: 6.8rem;
+
+  }
+}

@@ -72,8 +72,13 @@ tendencias: "Tratamiento a la recaída: tendencias actuales"
 tendencias_text_1: "El tratamiento a la recaída de gliomas de bajo grado es, al igual que los gliomas de alto grado, materia de controversia. En la medida de lo posible, se intentará cirugía de rescate, sobre todo por la posible transformación a alto grado. Dependiendo del escenario en que nos encontremos, podemos ir desde un tratamiento con intención radical (por ejemplo, un paciente al que no se le hubiera aplicado radioterapia tras cirugía) a un tratamiento exclusivamente paliativo. "
 tendencias_span: "Se recomienda la inclusión de estos pacientes en ensayos clínicos."
 tendencias_text_2: "Un reciente estudio fase II aleatorizado ha mostrado que la adición de bevacizumab a temozolomida en gliomas de grado II y III sin codelección 1p/19q en pacientes a la primera recaída no aporta beneficio significativo a la temozolmida sola en términos de supervivencia global (Bent et al., 2018)"
-
-
+evaluacion: Evaluación
+pregunta1: Pregunta 1
+pregunta1_text: "¿Qué dos marcadores moleculares son imprescindibles para el correcto diagnóstico de los gliomas de bajo grado?"
+pregunta1_opt_a: ATRX y TERT
+pregunta1_opt_b: TERT y p53
+pregunta1_opt_c: Codelección 1p/19q y mutación de IDH
+pregunta1_opt_d: Mutación IDH y BRAF
 
 
 
