@@ -36,3 +36,52 @@ figura_2_c_title: "C) Astrocitoma difuso, IDH1 mutado:"
 figura_2_c_text: "ATRX mutado, grado II de la OMS. Codeleción 1p/19q negativa. Histologicamente corresponde a una prolfieración neoplasica de celularidad media, que crece sobre un fondo fibrilar fino, constituida por celulas de núcleos ovalados o redondeados, de cromatina fina. "
 figura_2_d_title: " D) Astrocitoma difuso: "
 figura_2_d_text: "IDH1 mutado, codeleción 1p/19q negativa, grado II de la OMS. Se observa, en puntos, un fondo fibrilar, vacuolado, que puede confundir con un oligodendroglioma (de ahí la importancia del estudio molecular para categorizar la neoplasia)."
+independientemente: "Independientemente de que la primera aproximación siga siendo el análisis morfológico, a día de hoy es imprescindible completar el estudio de cara al diagnóstico definitivo y a la planificación del tratamiento mediante técnicas moleculares"
+imprescindible: Es imprescindible contar con la determinación de mutación de IDH (primero con la inmunotinción, reservando la secuenciación para casos negativos), la tinción de ATRX (si bien esta es más secundaria) y la codelección de 1p19q.
+marcadores: Estos marcadores nos darán información diagnóstica y pronóstica (la mutación de IDH y la codelección 1p19q son marcadores de mejor pronóstico). En el siguiente esquema, extraído de las guías SEOM 2017 sobre diagnóstico y tratamiento de los gliomas de bajo grado, se resume el algoritmo diagnóstico de los gliomas de bajo grado
+algoritmo_title: "Figura 3: Algoritmo diagnóstico molecular de los gliomas de bajo grado. (Sepúlveda-Sánchez et al., 2018)"
+metilacion: "El estado de la metilación del promotor de MGMT, que será discutido en los módulos de gliomas de alto grado, ha sido descrito como un factor independiente de buen pronóstico en gliomas de bajo grado, si bien sus implicaciones en el manejo terapéutico aún no están claras (Bell et al., 2018)"
+tratamiento: "Tratamiento post quirúrgico adyuvante"
+quirurgico: "El tratamiento quirúrgico mediante craneotomía es clave, salvo para tumores de muy buen pronóstico (ver arriba), o cuando haya contraindicaciones claras para la cirugía, en cuyo caso debe garantizarse un seguimiento estrecho para establecer el verdadero comportamiento de la lesión (un porcentaje no desdeñable puede tener un grado mayor de los esperado). "
+reseccion2: "Debe intentarse una resección completa siempre que sea posible, pero no a expensas de un déficit neurológico. La supervivencia y pronóstico mejoran cuanto mayor es el grado de resección, especialmente en el caso del oligodendroglioma. Sin embargo es muy frecuente la implicación de áreas elocuentes cerebrales en los gliomas de bajo grado, por lo que en la cirugía de estas lesiones son especialmente relevantes la monitorización neurofisiológica intraoperatoria, la cirugía con paciente despierto en el caso de tumores que involucren las áreas del lenguaje, y la neuronavegación para definir mejor los límites de la lesión. "
+tumores: "En los tumores que cumplan todos los factores de buen pronóstico (ver apartado anterior para los criterios), con cirugía completa, el seguimiento es una opción tras la intervención quirúrgica. No obstante, en casos en los que haya uno o más factores de riesgo, a saber:"
+mayor: Edad mayor de 40 años
+tamaño2: Tamaño mayor de 4-6 cm
+codeleccion: "Falta de codelección 1p/19q "
+mutacion: "Falta de mutación en IDH"
+completa: "Resección no completa"
+recomienda: Se recomienda tratamiento complementario post cirugía (Sepúlveda-Sánchez et al., 2018)
+radioterapia: "Radioterapia post operatoria:"
+radioterapia_span: "Si nos decidimos por radioterapia, esta debe ser tras la cirugía (demorarla a recaída conlleva menor supervivencia) y a dosis bajas (50,4-54 Gy a 1,8 Gy/fracción), dosis mayores no han demostrado ni mayor tiempo hasta progresión, ni mayor supervivencia y si mayores tasas de toxicidad, "
+radioterapia_text: " basado en los estudios INT/NCCTG (Shaw et al, 2002), EORTC 22845 y EORTC 22844."
+dosimetria: "Figura 3: Imagen de dosimetría IMRT de un glioma de bajo grado"
+quimioterapia: "Quimioterapia adyuvante"
+PCV: "PCV"
+quimioterapia_span: "El régimen estándar es el PCV (procarbacina, vincristina y lomustina), único hasta la fecha con nivel de evidencia I "
+quimioterapia_text_1: gracias al estudio RTOG 9802, el cual aleatorizó a 251 pacientes a recibir RDT seguido de 6 ciclos de PCV versus sólo RDT, siendo el objetivo principal la SG. Curiosamente, el primer análisis no demostró un impacto significativo en SG; sin embargo, con casi 12 años de mediana de seguimiento, sí se encontraron diferencias (13.3 años para la RDT y PCV vs 7.8 años para la RDT sola), incluyendo también beneficio en la SLP (10.4 vs 4 años) (Buckner et al., 2016).
+quimioterapia_text_2: Es un caso muy singular en la oncología, en el que tras muchos años de seguimiento, un endpoint tan importante como la SG alcanza diferencias significativas cuando en un primer análisis no lo alcanzó. Si bien hay que tenerlo en cuanta como análisis exploratorios, el mayor beneficio parecía encontrarse en pacientes con histología de oligodendroglima y en pacientes con mutaciones en IDH.
+quimioterapia_text_3: "El principal problema de este tratamiento es su falta de comodidad (necesita tratamiento intravenoso los días 8 y 29 de cada ciclo) y la toxicidad hematológica y clínica, que hace que sólo un 56% de los pacientes completaran el tratamiento por protocolo (Buckner et al., 2016)."
+temozolomida: "Temozolomida"
+temozolomida_text_1: "La temozolomida, de eficacia contrastada en gliomas de alto grado, no tiene la evidencia grado I que tiene el PCV, si bien presenta ventajas evidentes, tales como la comodidad y el perfil de toxicidad de la misma. Existe amplio debate en la neurooncología sobre si, a la vista de que temozolomida es al menos igual de eficaz que PCV en gliomas de alto grado, podemos extrapolar estos datos a los gliomas de bajo grado, especialmente en el contexto adyuvante."
+temozolomida_text_2: "No hay consenso en si, de decidirnos por temozolomida, debe realizarse de forma concomitante con radioterapia o después de la misma, si bien el ensayo con mejor evidencia de uso de temozolomida en gliomas de bajo grado (ensayo fase II, no aleatorizado) usaba un esquema concurrente con la RDT (a dosis de 75 mg/m2) seguido de temozolomida 150-200 mg/m2 días 1-5 de cada 28 durante 12 ciclos, sin alcanzarse la mediana de SLP ni de SG (con 4 años de mediana de seguimiento) y unas tasa de SLP a los 3 años de 59% y de SG de 73% (Fisher et al., 2015)."
+versus: "Temozolomida versus radioterapia"
+versus_text: "Recientemente, un estudio fase III aleatorizado ha evaluado la posibilidad de sustituir la radioterapia por temozolomida en pacientes con glioma de bajo grado, con al menos un factor de riesgo. Aunque las medianas de supervivencia global no han sido alcanzadas en ninguno de los grupos, y aunque la diferencia de SLP no es significativa, si que es numéricamente menor para la rama de temozolomida (39 vs 46 meses) (Baumert et al., 2016). Un resultado interesante de este estudio, es que en el análisis de subgrupos muestra que en pacientes con mutación en IDH y sin codelección de 1p/19q, los pacientes tratados con  radioterapia tenían una mayor SLP que los tratados con temozolomida."
+inicio: "Tratamiento de la enfermedad no resecable de inicio"
+inicio_text: "En estos casos, el tratamiento se considera paliativo, siendo la biopsia indicada para valorar factores pronósticos. No está claro el papel de la quimioterapia neoadyuvante, tanto basada en PCV como en temozolomida, en una potencial conversión de inoperable a operable."
+tendencias: "Tratamiento a la recaída: tendencias actuales"
+tendencias_text_1: "El tratamiento a la recaída de gliomas de bajo grado es, al igual que los gliomas de alto grado, materia de controversia. En la medida de lo posible, se intentará cirugía de rescate, sobre todo por la posible transformación a alto grado. Dependiendo del escenario en que nos encontremos, podemos ir desde un tratamiento con intención radical (por ejemplo, un paciente al que no se le hubiera aplicado radioterapia tras cirugía) a un tratamiento exclusivamente paliativo. "
+tendencias_span: "Se recomienda la inclusión de estos pacientes en ensayos clínicos."
+tendencias_text_2: "Un reciente estudio fase II aleatorizado ha mostrado que la adición de bevacizumab a temozolomida en gliomas de grado II y III sin codelección 1p/19q en pacientes a la primera recaída no aporta beneficio significativo a la temozolmida sola en términos de supervivencia global (Bent et al., 2018)"
+
+
+
+
+
+
+
+
+
+
+
+
+
