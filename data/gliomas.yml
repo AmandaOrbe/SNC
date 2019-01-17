@@ -20,4 +20,19 @@ reseccion: Resección completa
 idh: IDH mutado y codelección 1p/19q
 criterios: En los pacientes que cumplen estos criterios, la mediana de supervivencia puede superar los 10 años, mientras que en los que tienen factores de peor pronóstico, está en torno a 4 años (Daniels et al., 2011).
 sospecha: Una vez establecida la sospecha diagnóstica, la prueba de imagen preferida es la resonancia magnética con contraste. A diferencia de los gliomas de alto grado, los gliomas de bajo grado suelen ser hipocaptantes, con imagen hipointensa en T1 e hiperintensa en T2. Clásicamente, los oligodendrogliomas pueden presentar calcificaciones en su interior y además presentar localizaciones corticales, a diferencia de los astrocitomas, más típicos de la sustancia blanca.
-image1_text: "Figura 1: Astrocitoma difuso IDH mutado grado II de la OMS diagnosticado en un varón de 51 años que sufrió una crisis epiléptica. En la RM se identificó una lesión de bordes mal definidos, de localización periférica en el lóbulo frontal derecho, hiperintensa en secuencias FLAIR (A) y T2 (C) e hipointensa en T1 (B). La tumoración no mostraba zonas de edema, necrosis o realce tras la administración del contraste en T1 (D) que indicaran un alto grado histológico de agresividad."
+image1_title: "Figura 1: Astrocitoma difuso IDH mutado grado II de la OMS diagnosticado en un varón de 51 años que sufrió una crisis epiléptica. "
+image1_text: "En la RM se identificó una lesión de bordes mal definidos, de localización periférica en el lóbulo frontal derecho, hiperintensa en secuencias FLAIR (A) y T2 (C) e hipointensa en T1 (B). La tumoración no mostraba zonas de edema, necrosis o realce tras la administración del contraste en T1 (D) que indicaran un alto grado histológico de agresividad."
+diagnostico: Diagnóstico patológico y molecular
+histologicamente: "Histológicamente, los gliomas de bajo grado (consideramos de aquí en adelante a los grado II) se dividían en astrocitomas difusos, oligodendrogliomas y oligoastrocitomas, siendo esta tercer entidad una denominación obsoleta. Desde el punto de vista morfológico, las diferencias fundamentales son:"
+astrocitoma: Astrocitoma
+astrocitoma_body: Se cree que la célula de la que derivan son los astrocitos, compartiendo con ellos la tinción de GFAP (útil para el diagnóstico) y a diferencia de los astrocitomas anaplásicos o los glioblastomas, la transición entre el tejido normal y el neoplásico está poco definida, la celularidad y atipia es baja.
+oligodendroglioma: Oligodendroglioma
+oligodendroglioma_body: Se cree que derivan de los oligodendrocitos y su característica más clásica es la aparición de células en huevo frito, que no es sino un artefacto que sólo se ve en las muestras parafinadas y no en fresco. De nuevo, la celularidad y la atipia serán las características que diferencien el grado II del anaplásico o grado III.
+figura_2_a_title: "A) Oligodendroglioma IDH1 mutado"
+figura_2_a_text: " Con co-deleción 1p/19q, grado II de la OMS. Histologicamente corresponde a una neoplasia de celularidad media, constituida por células de núcleos en general isomorfos, redondeados, con halo claro perinuclear. "
+figura_2_b_title: "B) Oligodendroglioma grado II de la OMS. "
+figura_2_b_text: "Tinción inmunohistoquimica IDH1: positiva. Se observa una tinción citoplasmática de las celulas neoplásica. "
+figura_2_c_title: "C) Astrocitoma difuso, IDH1 mutado:"
+figura_2_c_text: "ATRX mutado, grado II de la OMS. Codeleción 1p/19q negativa. Histologicamente corresponde a una prolfieración neoplasica de celularidad media, que crece sobre un fondo fibrilar fino, constituida por celulas de núcleos ovalados o redondeados, de cromatina fina. "
+figura_2_d_title: " D) Astrocitoma difuso: "
+figura_2_d_text: "IDH1 mutado, codeleción 1p/19q negativa, grado II de la OMS. Se observa, en puntos, un fondo fibrilar, vacuolado, que puede confundir con un oligodendroglioma (de ahí la importancia del estudio molecular para categorizar la neoplasia)."

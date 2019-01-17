@@ -1,19 +1,16 @@
-<div class="image-big" data-toggle="modal" data-target=  .<%= id  %> >
-  <div class="image-big__image" >
+<div class="image-small" data-toggle="modal" data-target= .<%= id  %>>
+  <div class="image-small__image" >
     <%= image_tag image %>
   </div>
 
-
-  <div class="image-big__text">
+  <div class="image-small__text margin2">
     <p><strong><%=  title %> </strong></p>
     <p><%= text  %></p>
   </div>
 </div>
 
 
-
-
-<div class="modal fade  <%= id  %>" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+<div class="modal fade bd-example-modal-lg <%= id  %>" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg">
     <div class="modal-content">
         <div class="image-modal-header">
@@ -25,7 +22,7 @@
         <div class="image-modal__image" >
           <%= image_tag image %>
         </div>
-        <div class="image-modal__text">
+        <div class="image-modal__text ">
           <p><strong><%=  title %> </strong></p>
           <p><%= text  %></p>
         </div>
@@ -34,3 +31,4 @@
     </div>
   </div>
 </div>
+
