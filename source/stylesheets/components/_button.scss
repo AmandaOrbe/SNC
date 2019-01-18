@@ -15,7 +15,10 @@
     width: 25rem;
   }
 
-  &:hover{
+  &:hover,
+  &:focus,
+  &:active{
+    outline: $orange;
     background-color: $dark-orange;
     margin-top: 6.8rem;
 

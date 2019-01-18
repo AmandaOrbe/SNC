@@ -1,16 +1,19 @@
-.test{
+.form{
 
   position: relative;
 
-  &__option{
+
+
+  &__radio-label{
     width: 80%;
     box-shadow: $box-shadow;
     border-left: 7px solid $orange;
-    margin-top: 4rem;
+    margin-top: 2rem;
     transition: all .5s ease-in-out;
     height: 7rem;
     overflow: hidden;
     position: relative;
+    cursor: pointer;
   }
 
   h5{
@@ -23,14 +26,25 @@
     left: 4rem;
   }
 
-  &__check{
-    height: 1.5rem;
-    width: 1.5rem;
+  &__radio-input{
+    display: none;
+  }
+
+  &__radio-button{
+    height: 1.4rem;
+    width: 1.4rem;
     border: 1px solid $orange;
-    border-radius: 100%;
+    border-radius: .7rem;
     position: absolute;
     left: 2.5rem;
     top: 2.75rem;
+    transition: all .2s;
+
+
+  }
+
+  &__radio-input:checked + &__radio-label &__radio-button{
+    background-color: $orange;
   }
 
 }
