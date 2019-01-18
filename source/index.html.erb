@@ -108,7 +108,7 @@
       <%= partial(:'components/header1', :locals => { :text => t.evaluacion}) %>
       <%= partial(:'components/header2', :locals => { :text => t.pregunta1}) %>
       <p class="margin5"><%= t.pregunta1_text  %> </p>
-      <%= partial(:'components/test',  :locals => { :test_options => [t.pregunta1_opt_a, t.pregunta1_opt_b, t.pregunta1_opt_c, t.pregunta1_opt_d ]}) %>
+      <%= partial(:'components/test',  :locals => { :test_options => [t.pregunta1_opt_a, t.pregunta1_opt_b, t.pregunta1_opt_c, t.pregunta1_opt_d ], :name => "Preguntra1"}) %>
 
     </div>
       </div>
