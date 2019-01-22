@@ -87,6 +87,41 @@ pregunta2_opt_b: Temozolomida
 pregunta2_opt_c: Procarbacina, lomustina y vincristina
 pregunta2_opt_d: Nivolumab
 answer2: "El tratamiento adyuvante post cirugía y post radioterapia que tiene una mayor evidencia en cuanto a beneficio en supervivencia es Procarbacina, lomustina y vincristina"
+bibliografia: BIBLIOGRAFÍA
+revistas: Revistas
+biblio1_title: "Baumert, B. G., Hegi, M. E., van den Bent, M. J., von Deimling, A., Gorlia, T., Hoang-Xuan, K., … Stupp, R. (2016). Temozolomide chemotherapy versus radiotherapy in high-risk low-grade glioma (EORTC 22033-26033): a randomised, open-label, phase 3 intergroup study."
+biblio1_magazine: "The Lancet. Oncology, 17(11), 1521–1532."
+biblio1_link: "https://doi.org/10.1016/S1470-2045(16)30313-8"
+biblio2_title: "Bell, E. H., Zhang, P., Fisher, B. J., Macdonald, D. R., McElroy, J. P., Lesser, G. J., … Chakravarti, A. (2018). Association of MGMT Promoter Methylation Status With Survival Outcomes in Patients With High-Risk Glioma Treated With Radiotherapy and Temozolomide: An Analysis From the NRG Oncology/RTOG 0424 Trial."
+biblio2_magazine: "JAMA Oncology."
+biblio2_link: "https://doi.org/10.1001/jamaoncol.2018.1977"
+biblio3_title: "Bent, M. J. van den, Klein, M., Smits, M., Reijneveld, J. C., French, P. J., Clement, P., … Idbaih, A. (2018). Bevacizumab and temozolomide in patients with first recurrence of WHO grade II and III glioma, without 1p/19q co-deletion (TAVAREC): a randomised controlled phase 2 EORTC trial. "
+biblio3_magazine: " The Lancet Oncology, 0(0)."
+biblio3_link: "https://doi.org/10.1016/S1470-2045(18)30362-0"
+biblio4_title: "Buckner, J. C., Shaw, E. G., Pugh, S. L., Chakravarti, A., Gilbert, M. R., Barger, G. R., … Curran, W. J. (2016). Radiation plus Procarbazine, CCNU, and Vincristine in Low-Grade Glioma."
+biblio4_magazine: "The New England Journal of Medicine, 374(14), 1344–1355."
+biblio4_link: "https://doi.org/10.1056/NEJMoa1500925"
+biblio5_title: "Daniels, T. B., Brown, P. D., Felten, S. J., Wu, W., Buckner, J. C., Arusell, R. M., … Shaw, E. G. (2011). Validation of EORTC prognostic factors for adults with low-grade glioma: a report using intergroup 86-72-51."
+biblio5_magazine: " International Journal of Radiation Oncology, Biology, Physics, 81(1), 218–224."
+biblio5_link: "https://doi.org/10.1016/j.ijrobp.2010.05.003"
+biblio6_title: "Fisher, B. J., Hu, C., Macdonald, D. R., Lesser, G. J., Coons, S. W., Brachman, D. G., … Mehta, M. (2015). Phase 2 study of temozolomide-based chemoradiation therapy for high-risk low-grade gliomas: preliminary results of Radiation Therapy Oncology Group 0424."
+biblio6_magazine: " International Journal of Radiation Oncology, Biology, Physics, 91(3), 497–504. "
+biblio6_link: "https://doi.org/10.1016/j.ijrobp.2014.11.012"
+biblio7_title: "Karim AB et al (1996). A randomized trial on dose-response in radiation therapy of low-grade cerebral glioma: European Organization for Research and Treatment of Cancer (EORTC) Study 22844."
+biblio7_magazine: " International Journal of Radiation Oncology, Biology, Physics, 91(3), 497–504. "
+biblio7_link: ""
+biblio8_title: "Karim AB et al (2002). Randomized trial on the efficacy of radiotherapy for cerebral low-grade glioma in the adult: European Organization for Research and Treatment of Cancer Study 22845 with the Medical Research Council study BRO4: an interim analysis."
+biblio8_magazine: "Int J Radiat Oncol Biol Phys. 2002 Feb 1;52(2):316-24."
+biblio8_link: ""
+biblio9_title: "Shaw E et al (2002). Prospective randomized trial of low- versus high-dose radiation therapy in adults with supratentorial low-grade glioma: initial report of a North Central Cancer Treatment Group/Radiation Therapy Oncology Group/Eastern Cooperative Oncology Group study."
+biblio9_magazine: "J Clin Oncol. 2002 May 1;20(9):2267-76."
+biblio9_link: ""
+biblio10_title: "Pouratian, N., & Schiff, D. (2010). Management of low-grade glioma. "
+biblio10_magazine: "Current Neurology and Neuroscience Reports, 10(3), 224–231."
+biblio10_link: "https://doi.org/10.1007/s11910-010-0105-7"
+biblio11_title: "Sepúlveda-Sánchez, J. M., Muñoz Langa, J., Arráez, M. Á., Fuster, J., Hernández Laín, A., Reynés, G., … Gallego, Ó. (2018). SEOM clinical guideline of diagnosis and management of low-grade glioma (2017)."
+biblio11_magazine: "Clinical & Translational Oncology: Official Publication of the Federation of Spanish Oncology Societies and of the National Cancer Institute of Mexico, 20(1), 3–15."
+biblio11_link: "https://doi.org/10.1007/s12094-017-1790-3"
 
 
 
