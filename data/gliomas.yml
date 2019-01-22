@@ -80,6 +80,13 @@ pregunta1_opt_b: TERT y p53
 pregunta1_opt_c: Codelección 1p/19q y mutación de IDH
 pregunta1_opt_d: Mutación IDH y BRAF
 answer1: "Para el correcto diagnóstico de los gliomas de bajo grado los dos marcadores moleculares imprescindibles son el TERT y el p53"
+pregunta2: Pregunta 2
+pregunta2_text: "El tratamiento adyuvante post cirugía y post radioterapia que tiene una mayor evidencia en cuanto a beneficio en supervivencia es:"
+pregunta2_opt_a: Bevacizumab
+pregunta2_opt_b: Temozolomida
+pregunta2_opt_c: Procarbacina, lomustina y vincristina
+pregunta2_opt_d: Nivolumab
+answer2: "El tratamiento adyuvante post cirugía y post radioterapia que tiene una mayor evidencia en cuanto a beneficio en supervivencia es Procarbacina, lomustina y vincristina"
 
 
 
