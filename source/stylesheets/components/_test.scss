@@ -7,13 +7,32 @@
   &__radio-label{
     width: 80%;
     box-shadow: $box-shadow;
-    border-left: 7px solid $orange;
-    margin-top: 2rem;
-    transition: all .5s ease-in-out;
-    height: 7rem;
+
+    margin-top: 1rem;
+    transition: all 1s ease-in-out;
+    height: 6rem;
     overflow: hidden;
     position: relative;
     cursor: pointer;
+  }
+
+  &__orange1,
+  &__orange2{
+
+    display: block;
+    height: 6rem;
+    width: 8px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 1s ease-in-out;
+    background-color: $orange;
+    z-index: 0;
+  }
+
+
+  &__radio-input{
+    display: none;
   }
 
   h5{
@@ -26,10 +45,6 @@
     left: 4rem;
   }
 
-  &__radio-input{
-    display: none;
-  }
-
   &__radio-button{
     height: 1.4rem;
     width: 1.4rem;
@@ -38,7 +53,6 @@
     position: absolute;
     left: 2.5rem;
     top: 2.75rem;
-    transition: all .2s;
 
 
   }
@@ -48,3 +62,24 @@
   }
 
 }
+
+.full-width{
+  width: 100% !important;
+}
+
+.test__answer__correct,
+.test__answer__incorrect{
+  max-height: 0;
+  overflow: hidden;
+  transition: all 1s ease;
+}
+
+.cross1{
+  transform: translateX(30px) rotate(45deg);
+}
+
+.cross2{
+  transform: translateX(30px) rotate(-45deg);
+}
+
+
