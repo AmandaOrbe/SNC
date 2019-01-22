@@ -133,6 +133,25 @@
       <%= partial(:'components/test',  :locals => { :test_options => [t.pregunta2_opt_a, t.pregunta2_opt_b, t.pregunta2_opt_c, t.pregunta2_opt_d ], :name => "Pregunta2", :correct => 0}) %>
 
     </div>
+
+
+    <div class="content">
+      <%= partial(:'components/header1', :locals => { :text => t.bibliografia}) %>
+      <%= partial(:'components/header2', :locals => { :text => t.revistas}) %>
+      <ul class= "list">
+        <%= partial(:'components/biblio',  :locals => { :title => t.biblio1_title, :magazine => t.biblio1_magazine, :link => t.biblio1_link}) %>
+        <%= partial(:'components/biblio',  :locals => { :title => t.biblio2_title, :magazine => t.biblio2_magazine, :link => t.biblio2_link}) %>
+        <%= partial(:'components/biblio',  :locals => { :title => t.biblio3_title, :magazine => t.biblio3_magazine, :link => t.biblio3_link}) %>
+        <%= partial(:'components/biblio',  :locals => { :title => t.biblio4_title, :magazine => t.biblio4_magazine, :link => t.biblio4_link}) %>
+        <%= partial(:'components/biblio',  :locals => { :title => t.biblio5_title, :magazine => t.biblio5_magazine, :link => t.biblio5_link}) %>
+        <%= partial(:'components/biblio',  :locals => { :title => t.biblio6_title, :magazine => t.biblio6_magazine, :link => t.biblio6_link}) %>
+        <%= partial(:'components/biblio',  :locals => { :title => t.biblio7_title, :magazine => t.biblio7_magazine, :link => t.biblio7_link}) %>
+        <%= partial(:'components/biblio',  :locals => { :title => t.biblio8_title, :magazine => t.biblio8_magazine, :link => t.biblio8_link}) %>
+        <%= partial(:'components/biblio',  :locals => { :title => t.biblio9_title, :magazine => t.biblio9_magazine, :link => t.biblio9_link}) %>
+        <%= partial(:'components/biblio',  :locals => { :title => t.biblio10_title, :magazine => t.biblio10_magazine, :link => t.biblio10_link}) %>
+        <%= partial(:'components/biblio',  :locals => { :title => t.biblio11_title, :magazine => t.biblio11_magazine, :link => t.biblio11_link}) %>
+      </ul>
+    </div>
       </div>
   </div>
 </div>
