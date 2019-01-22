@@ -1,9 +1,11 @@
-<form action="#" class="form">
+<form action="#" class="form margin2">
     <% test_options.each do |option| %>
 
     <div class="form__group">
       <input type="radio" class="form__radio-input" name= <%= name %> id= <%= option.tr(" ", "")%>   >
       <label for=<%= option.tr(" ", "")%>  class="form__radio-label" name= <%= name %>>
+        <span class="form__orange1"></span>
+        <span class="form__orange2"></span>
         <span class="form__radio-button"></span>
         <h5><%= option  %></h5>
       </label>
@@ -13,7 +15,7 @@
 
   <br>
   <br>
-  <div class=" margin-bottom7">
-    <button class="button button__comprobar margin7 margin-bottom7"> Comprobar </button>
+  <div class=" margin-bottom2">
+    <button id= <%= name %> class="button button__comprobar margin2 margin-bottom2"> Comprobar </button>
   </div>
 </form>
