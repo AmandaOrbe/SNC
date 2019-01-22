@@ -68,7 +68,9 @@
 }
 
 .test__answer__correct,
-.test__answer__incorrect{
+.test__answer__incorrect,
+.test__answer__correct2,
+.test__answer__incorrect2{
   max-height: 0;
   overflow: hidden;
   transition: all 1s ease;

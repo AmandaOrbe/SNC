@@ -30,6 +30,7 @@ console.log(respuestas)
         console.log(respuesta);
         respuesta.style.color = "#CCCCCC";
         respuesta.querySelector(".form__orange1").style.display = "none";
+        respuesta.querySelector(".form__orange2").style.display = "none";
         respuesta.querySelector(".form__radio-button").style.display = "none";
         respuesta.querySelector("label").style.boxShadow = "none";
         });
@@ -47,25 +48,52 @@ console.log(respuestas)
           respuesta.querySelector(".form__orange2").style.display = "none";
          respuesta.querySelector("label").style.boxShadow = "none";
         }
-
-        // console.log(respuesta);
-        // respuesta.style.color = "#CCCCCC";
-        // respuesta.querySelector(".form__orange1").style.display = "none";
-        // respuesta.querySelector(".form__radio-button").style.display = "none";
-        // respuesta.querySelector("label").style.boxShadow = "none";
-        });
+      });
     }
 
     respuesta1.parentNode.querySelector(".form__orange1").classList.add("full-width")
     });
 
-// const bigImages = document.querySelectorAll('.image-big')
 
-// bigImages.forEach((bigImage) => {
 
-//   bigImage.addEventListener("click", (event) => {
-//     event.currentTarget.style.width = "100vw";
-//     event.currentTarget.style.w = "100vw";
-//   });
 
-// });
+const respuesta2 = document.getElementById("Procarbacina,lomustinayvincristina")
+const button2 = document.getElementById("Pregunta2")
+const respuestas2 = [document.querySelectorAll('.form__group')[4], document.querySelectorAll('.form__group')[5], document.querySelectorAll('.form__group')[7]];
+// respuestas = respuestas.splice(2, 1);
+console.log(respuestas2)
+
+  button2.addEventListener("click", (event) => {
+    event.preventDefault();
+    if (respuesta2.checked) {
+      document.querySelector(".test__answer__correct2").style.maxHeight= "150rem";
+      respuesta2.parentNode.querySelector(".form__orange1").classList.add("full-width");
+      respuestas2.forEach((respuesta) => {
+        console.log(respuesta);
+        respuesta.style.color = "#CCCCCC";
+        respuesta.querySelector(".form__orange1").style.display = "none";
+        respuesta.querySelector(".form__orange2").style.display = "none";
+        respuesta.querySelector(".form__radio-button").style.display = "none";
+        respuesta.querySelector("label").style.boxShadow = "none";
+        });
+    } else {
+      document.querySelector(".test__answer__incorrect2").style.maxHeight= "150rem";
+      respuesta2.parentNode.querySelector(".form__orange1").classList.add("full-width");
+      respuestas2.forEach((respuesta) => {
+        respuesta.style.color = "#CCCCCC";
+        respuesta.querySelector(".form__radio-button").style.display = "none";
+        if (respuesta.querySelector(".form__radio-input").checked) {
+          respuesta.querySelector(".form__orange1").classList.add("cross1");
+          respuesta.querySelector(".form__orange2").classList.add("cross2");
+        }else{
+          respuesta.querySelector(".form__orange1").style.display = "none";
+          respuesta.querySelector(".form__orange2").style.display = "none";
+         respuesta.querySelector("label").style.boxShadow = "none";
+        }
+      });
+    }
+
+    respuesta2.parentNode.querySelector(".form__orange1").classList.add("full-width")
+    });
+
+
