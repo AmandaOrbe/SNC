@@ -14,6 +14,7 @@ cards.forEach((card) => {
 
 });
 
+// **********************************QUIZ****************************
 
 const respuesta1 = document.getElementById("Codelección1p/19qymutacióndeIDH")
 const button = document.getElementById("Pregunta1")
@@ -95,5 +96,27 @@ console.log(respuestas2)
 
     respuesta2.parentNode.querySelector(".form__orange1").classList.add("full-width")
     });
+
+// **********************************SIDEBAR****************************
+
+
+
+const diagnosticoHeight = document.getElementById("diagnostico").scrollHeight;
+const epidemiologia = document.getElementById("side_Epidemiología")
+
+window.addEventListener('scroll', () => {
+      if (window.scrollY >= diagnosticoHeight + 700) {
+        epidemiologia.classList.add('sidebar__content__read');
+      } else {
+        console.log("miau");
+      }
+    });
+
+
+
+
+
+
+
 
 

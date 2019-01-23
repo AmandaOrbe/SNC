@@ -1,0 +1,27 @@
+<% t =  data.gliomas%>
+<div id="sidebar">
+  <div class="sidebar">
+    <div class="sidebar__top">
+      <div class="sidebar__title">
+        <h2><%= t.title  %></h2>
+      </div>
+      <div class="sidebar__percentage ">
+        <p><span>xx%</span> completado</p>
+        <span class="sidebar__percentage__bar sidebar__percentage__bar--1"></span>
+        <span class="sidebar__percentage__bar sidebar__percentage__bar--2"></span>
+      </div>
+    </div>
+    <div class="sidebar__content">
+      <div class="sidebar__content__item sidebar__content__title">
+        CONTENIDOS
+      </div>
+      <% capitulos = [t.presentacion, t.objetivos, t.epidemiologia, t.diagnostico, t.tratamiento, t.inicio, t.tendencias] %>
+      <% capitulos.each do |item| %>
+      <div class="sidebar__content__item sidebar__content__chapter" id= side_<%=item  %>>
+        <%= item  %>
+      </div>
+      <% end %>
+    </div>
+
+  </div>
+</div>

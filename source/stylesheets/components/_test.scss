@@ -16,6 +16,8 @@
     cursor: pointer;
   }
 
+
+
   &__orange1,
   &__orange2{
 
@@ -74,6 +76,13 @@
   max-height: 0;
   overflow: hidden;
   transition: all 1s ease;
+
+  h4{
+  color: $orange;
+    font-family: $serif-font;
+    font-weight: 700;
+    font-size: 1.8rem;
+  }
 }
 
 .cross1{
