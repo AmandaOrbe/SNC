@@ -34,7 +34,7 @@
           <p class= "indented margin5"><%= t.sospecha  %></p>
           <%= partial(:'components/image-big',  :locals => { :image => "images/astrocitoma.png", :title => t.image1_title, :text => t.image1_text, :id => "astrocitoma"}) %>
         </div>
-
+<br>
         <div id="diagnostico">
           <%= partial(:'components/header2', :locals => { :text => t.diagnostico}) %>
           <p class= "indented margin5"><%= t.histologicamente  %></p>
@@ -78,7 +78,6 @@
             <%= t.radioterapia_text %>
           </p>
            <%= partial(:'components/image-big',  :locals => { :image => "images/dosimetria_IMRT.png", :title => t.dosimetria, :text => "", :id => "dosimetria"}) %>
-
           <h3 class="margin7"><%= t.quimioterapia  %> </h3>
           <h3 class="margin7"><%= t.PCV  %> </h3>
           <p class= "indented margin5">
@@ -113,18 +112,19 @@
       </div>
 
     <div class="content">
-      <%= partial(:'components/header1', :locals => { :text => t.pregunta1}) %>
-      <p class="margin5"><%= t.pregunta1_text  %> </p>
-      <div class="test__answer__correct margin2">
-        <h4>¡CORRECTO!</h4>
-        <p><%= t.answer1 %></p>
+      <div id="pregunta1">
+        <%= partial(:'components/header1', :locals => { :text => t.pregunta1}) %>
+        <p class="margin5"><%= t.pregunta1_text  %> </p>
+        <div class="test__answer__correct margin2">
+          <h4>¡CORRECTO!</h4>
+          <p><%= t.answer1 %></p>
+          </div>
+        <div class="test__answer__incorrect margin2">
+          <h4>¡INCORRECTO!</h4>
+          <p><%= t.answer1  %></p>
         </div>
-      <div class="test__answer__incorrect margin2">
-        <h4>¡INCORRECTO!</h4>
-        <p><%= t.answer1  %></p>
+        <%= partial(:'components/test',  :locals => { :test_options => [t.pregunta1_opt_a, t.pregunta1_opt_b, t.pregunta1_opt_c, t.pregunta1_opt_d ], :name => "Pregunta1", :correct => 0}) %>
       </div>
-      <%= partial(:'components/test',  :locals => { :test_options => [t.pregunta1_opt_a, t.pregunta1_opt_b, t.pregunta1_opt_c, t.pregunta1_opt_d ], :name => "Pregunta1", :correct => 0}) %>
-
     </div>
 
     <div class="content">

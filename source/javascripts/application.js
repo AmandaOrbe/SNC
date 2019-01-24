@@ -99,24 +99,79 @@ console.log(respuestas2)
 
 // **********************************SIDEBAR****************************
 
+const presentacionTab = document.getElementById("side_presentación");
+const presentacion = document.getElementById("presentacion");
+
+const objetivosTab = document.getElementById("side_objetivos");
+const objetivos = document.getElementById("objetivos");
+
+const epidemiologiaTab = document.getElementById("side_Epidemiologíaydiagnóstico");
+const epidemiologia = document.getElementById("epidemiologia");
+
+const diagnosticoTab = document.getElementById("side_Diagnósticopatológicoymolecular");
+const diagnostico = document.getElementById("diagnostico");
+
+const tratamientoTab = document.getElementById("side_Tratamientopostquirúrgicoadyuvante");
+const tratamiento = document.getElementById("tratamiento");
+
+const inicioTab = document.getElementById("side_Tratamientodelaenfermedadnoresecabledeinicio");
+const inicio = document.getElementById("inicio");
+
+const tendenciasTab = document.getElementById("side_Tratamientoalarecaída:tendenciasactuales");
+const tendencias = document.getElementById("tendencias");
 
 
-const diagnosticoHeight = document.getElementById("diagnostico").scrollHeight;
-const epidemiologia = document.getElementById("side_Epidemiología")
 
-window.addEventListener('scroll', () => {
-      if (window.scrollY >= diagnosticoHeight + 700) {
-        epidemiologia.classList.add('sidebar__content__read');
-      } else {
-        console.log("miau");
+const chapters = [{tab: presentacionTab, content: presentacion} ,
+                  {tab: objetivosTab, content: objetivos} ,
+                  {tab: epidemiologiaTab, content: epidemiologia},
+                  {tab: diagnosticoTab, content: diagnostico},
+                  {tab: tratamientoTab, content: tratamiento},
+                  {tab: inicioTab, content: inicio},
+                  {tab: tendenciasTab, content: tendencias}
+                ]
+
+
+  window.addEventListener('scroll', () => {
+    chapters.forEach((chapter) => {
+      if (chapter.content.offsetTop < (window.scrollY ) && (window.scrollY ) < (chapter.content.offsetTop + chapter.content.scrollHeight)) {
+        chapter.tab.classList.add('sidebar__content__current');
+        chapter.tab.classList.remove('sidebar__content__read');
+        console.log(chapter)
+        console.log( "chapter.content.offsetTop is" + chapter.content.offsetTop + "< a window.scrollY " + (window.scrollY )  + " y window.scrollY < (chapter.content.offsetTop + chapter.content.scrollHeight)" + (chapter.content.offsetTop + chapter.content.scrollHeight));
+
+      } else if ((window.scrollY ) >= (chapter.content.offsetTop + chapter.content.scrollHeight)){
+        chapter.tab.classList.remove('sidebar__content__current');
+        chapter.tab.classList.add('sidebar__content__read');
+        // console.log(chapter.tab.classList + "is" + chapter.content.offsetTop  )
+      } else if (chapter.content.offsetTop > (window.scrollY ) )  {
+        chapter.tab.classList.remove('sidebar__content__current');
+        chapter.tab.classList.remove('sidebar__content__read');
       }
     });
 
+});
 
+// window.addEventListener('scroll', () => {
+//   if (window.scrollY > 921){
+//     console.log("fin presentacion");
+//   };
+// });
 
+// window.addEventListener('scroll', () => {
+//   if (window.scrollY > 1242){
+//     console.log("fin objetivos");
+//   };
+// });
 
+console.log("presentacion va de " + presentacion.offsetTop + "a" + (presentacion.offsetTop + presentacion.scrollHeight) )
+console.log("objetivos va de " + objetivos.offsetTop + "a" + (objetivos.offsetTop + objetivos.scrollHeight) + "objetivos mide " + objetivos.scrollHeight)
+console.log("epidemiologia va de " + epidemiologia.offsetTop + "a" + (epidemiologia.offsetTop + epidemiologia.scrollHeight) )
+console.log("diagnostico va de " + diagnostico.offsetTop + "a" + (diagnostico.offsetTop + diagnostico.scrollHeight) )
 
-
+// console.log(presentacion.offsetTop + "<" + (window.scrollY +500)  + "<" + (presentacion.offsetTop + presentacion.scrollHeight));
+// console.log((window.scrollY +500) );
+// console.log(presentacion.offsetTop + presentacion.scrollHeight);
 
 
 
