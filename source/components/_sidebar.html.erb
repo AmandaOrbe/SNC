@@ -17,7 +17,7 @@
       </div>
       <% capitulos = [t.presentacion, t.objetivos, t.epidemiologia, t.diagnostico, t.tratamiento, t.inicio, t.tendencias] %>
       <% capitulos.each do |item| %>
-      <div class="sidebar__content__item sidebar__content__chapter" id= side_<%=item  %>>
+      <div class="sidebar__content__item sidebar__content__chapter" id= side_<%=item.tr(" ", "")  %>>
         <%= item  %>
       </div>
       <% end %>
