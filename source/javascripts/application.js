@@ -152,6 +152,15 @@ const chapters = [{tab: presentacionTab, content: presentacion} ,
 
 });
 
+
+
+  // ***************************PERCENTAGE*******************************
+ window.addEventListener('scroll', () => {
+  let percentage = ( window.scrollY)/((document.querySelector("#home").scrollHeight) - window.innerHeight );
+  document.querySelector(".sidebar__percentage__bar--2").style.width = `${percentage * 20.7}rem`
+  document.getElementById("%number").innerText = Math.round(percentage*100);
+});
+
 // window.addEventListener('scroll', () => {
 //   if (window.scrollY > 921){
 //     console.log("fin presentacion");
