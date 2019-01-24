@@ -15,10 +15,13 @@
       <div class="sidebar__content__item sidebar__content__title">
         CONTENIDOS
       </div>
-      <% capitulos = [t.presentacion, t.objetivos, t.epidemiologia, t.diagnostico, t.tratamiento, t.inicio, t.tendencias] %>
+      <% capitulos = [t.presentacion_side, t.objetivos_side, t.epidemiologia_side, t.diagnostico_side, t.tratamiento_side, t.inicio_side, t.tendencias_side] %>
       <% capitulos.each do |item| %>
       <div class="sidebar__content__item sidebar__content__chapter" id= side_<%=item.tr(" ", "")  %>>
-        <%= item  %>
+        <p><%= item  %></p>
+       <i class="fas fa-check-circle"></i>
+       <span class="fas fa-chevron-right sidebar__content__chevron"></span>
+
       </div>
       <% end %>
     </div>
