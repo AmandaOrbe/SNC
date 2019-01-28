@@ -8,19 +8,19 @@
       <div class="content">
         <%= partial(:'components/header1', :locals => { :text => t.title}) %>
 
-        <div id="presentacion">
+        <div id="Prese">
           <%= partial(:'components/header2', :locals => { :text => t.presentacion}) %>
           <p class= "indented margin5 "> <%= t.presentacion_text1 %> </p>
           <p class= "indented  "> <%= t.presentacion_text2 %> </p>
             <p class="indented "><span class=" container__highlight"><%= t.presentacion_span %></span></p>
         </div>
 
-        <div id="objetivos">
+        <div id="Objet">
           <%= partial(:'components/header2', :locals => { :text => t.objetivos}) %>
           <p class= "indented margin5"> <%= t.objetivos_text %></p>
         </div>
 
-        <div id="epidemiologia">
+        <div id="1.Epi">
           <%= partial(:'components/header2', :locals => { :text => t.epidemiologia}) %>
           <p class= "indented margin5"> <%= t.epidemiologia_text %></p>
           <div class="card_row">
@@ -37,7 +37,7 @@
           <%= partial(:'components/image-big',  :locals => { :image => "images/astrocitoma.png", :title => t.image1_title, :text => t.image1_text, :id => "astrocitoma"}) %>
         </div>
 <br>
-        <div id="diagnostico">
+        <div id="2.Dia">
           <%= partial(:'components/header2', :locals => { :text => t.diagnostico}) %>
           <p class= "indented margin5"><%= t.histologicamente  %></p>
           <div class="card_row">
@@ -66,7 +66,7 @@
           </p>
         </div>
 
-        <div id="tratamiento">
+        <div id="3.Tra">
           <%= partial(:'components/header2', :locals => { :text => t.tratamiento}) %>
           <p class="indented margin5"><%= t.quirurgico %> </p>
           <p class="indented margin5"><%= t.reseccion2  %> </p>
@@ -97,12 +97,12 @@
           <p class= "indented margin5"><%= t.versus_text%> </p>
         </div>
 
-        <div id="inicio">
+        <div id="4.Tra">
           <%= partial(:'components/header2', :locals => { :text => t.inicio}) %>
           <p class= "indented margin5"><%= t.inicio_text%> </p>
         </div>
 
-        <div id="tendencias">
+        <div id="5.Tra">
           <%= partial(:'components/header2', :locals => { :text => t.tendencias}) %>
           <p class= "indented margin5">
             <%= t.tendencias_text_1%>
@@ -113,8 +113,8 @@
 
       </div>
 
-    <div class="content">
-      <div id="pregunta1">
+    <div id="pregunta1" class="content">
+      <div >
         <%= partial(:'components/header1', :locals => { :text => t.pregunta1}) %>
         <p class="margin5"><%= t.pregunta1_text  %> </p>
 
@@ -132,8 +132,8 @@
       </div>
     </div>
 
-    <div class="content">
-      <div id="pregunta2">
+    <div id="pregunta2" class="content">
+      <div >
 
       <%= partial(:'components/header1', :locals => { :text => t.pregunta2}) %>
       <p class="margin5"><%= t.pregunta2_text  %> </p>

@@ -22,7 +22,7 @@
         <% capitulos = [t.presentacion_side  , t.objetivos_side  , t.epidemiologia_side  , t.diagnostico_side , t.tratamiento_side  , t.inicio_side  , t.tendencias_side  ] %>
         <% capitulos.each do |capitulo| %>
 
-        <a href = # class="sidebar__content__item sidebar__content__chapter" id= side_<%=capitulo.tr(" ", "")  %>>
+        <a href= #<%= capitulo.tr(" ", "").byteslice(0,5)%> class="sidebar__content__item sidebar__content__chapter" id= side_<%=capitulo.tr(" ", "")  %>>
           <p><%= capitulo%></p>
           <i class="fas fa-check-circle check "></i>
           <span class="fas fa-chevron-right sidebar__content__chevron"></span>
