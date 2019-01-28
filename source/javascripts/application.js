@@ -19,85 +19,89 @@ cards.forEach((card) => {
 
 // **********************************QUIZ****************************
 
-const respuesta1 = document.getElementById("Codelección1p/19qymutacióndeIDH")
-const button = document.getElementById("Pregunta1")
+const respuesta1 = document.getElementById("Codelección1p/19qymutacióndeIDH");
+const button1 = document.getElementById("pregunta1__button");
+const question1 = document.getElementById("pregunta1");
 const respuestas = [document.querySelectorAll('.form__group')[0], document.querySelectorAll('.form__group')[1], document.querySelectorAll('.form__group')[3]];
-// respuestas = respuestas.splice(2, 1);
-console.log(respuestas)
-
-  button.addEventListener("click", (event) => {
-    event.preventDefault();
-    if (respuesta1.checked) {
-      document.querySelector(".test__answer__correct").style.maxHeight= "150rem";
-      respuesta1.parentNode.querySelector(".form__orange1").classList.add("full-width");
-      respuestas.forEach((respuesta) => {
-        console.log(respuesta);
-        respuesta.style.color = "#CCCCCC";
-        respuesta.querySelector(".form__orange1").style.display = "none";
-        respuesta.querySelector(".form__orange2").style.display = "none";
-        respuesta.querySelector(".form__radio-button").style.display = "none";
-        respuesta.querySelector("label").style.boxShadow = "none";
-        });
-    } else {
-      document.querySelector(".test__answer__incorrect").style.maxHeight= "150rem";
-      respuesta1.parentNode.querySelector(".form__orange1").classList.add("full-width");
-      respuestas.forEach((respuesta) => {
-        respuesta.style.color = "#CCCCCC";
-        respuesta.querySelector(".form__radio-button").style.display = "none";
-        if (respuesta.querySelector(".form__radio-input").checked) {
-          respuesta.querySelector(".form__orange1").classList.add("cross1");
-          respuesta.querySelector(".form__orange2").classList.add("cross2");
-        }else{
-          respuesta.querySelector(".form__orange1").style.display = "none";
-          respuesta.querySelector(".form__orange2").style.display = "none";
-         respuesta.querySelector("label").style.boxShadow = "none";
-        }
-      });
-    }
-
-    respuesta1.parentNode.querySelector(".form__orange1").classList.add("full-width")
-    });
-
-
+const radio_inputs = document.querySelectorAll('.form__radio-input');
+const question1_inputs = [radio_inputs[0], radio_inputs[1], radio_inputs[2], radio_inputs[3]];
 
 
 const respuesta2 = document.getElementById("Procarbacina,lomustinayvincristina")
-const button2 = document.getElementById("Pregunta2")
+const button2 = document.getElementById("pregunta2__button")
+const question2 = document.getElementById("pregunta2");
 const respuestas2 = [document.querySelectorAll('.form__group')[4], document.querySelectorAll('.form__group')[5], document.querySelectorAll('.form__group')[7]];
-// respuestas = respuestas.splice(2, 1);
-console.log(respuestas2)
+const question2_inputs = [radio_inputs[4], radio_inputs[5], radio_inputs[6], radio_inputs[7]];
 
-  button2.addEventListener("click", (event) => {
-    event.preventDefault();
-    if (respuesta2.checked) {
-      document.querySelector(".test__answer__correct2").style.maxHeight= "150rem";
-      respuesta2.parentNode.querySelector(".form__orange1").classList.add("full-width");
-      respuestas2.forEach((respuesta) => {
-        console.log(respuesta);
-        respuesta.style.color = "#CCCCCC";
-        respuesta.querySelector(".form__orange1").style.display = "none";
-        respuesta.querySelector(".form__orange2").style.display = "none";
-        respuesta.querySelector(".form__radio-button").style.display = "none";
-        respuesta.querySelector("label").style.boxShadow = "none";
-        });
-    } else {
-      document.querySelector(".test__answer__incorrect2").style.maxHeight= "150rem";
-      respuesta2.parentNode.querySelector(".form__orange1").classList.add("full-width");
-      respuestas2.forEach((respuesta) => {
-        respuesta.style.color = "#CCCCCC";
-        respuesta.querySelector(".form__radio-button").style.display = "none";
-        if (respuesta.querySelector(".form__radio-input").checked) {
-          respuesta.querySelector(".form__orange1").classList.add("cross1");
-          respuesta.querySelector(".form__orange2").classList.add("cross2");
-        }else{
-          respuesta.querySelector(".form__orange1").style.display = "none";
-          respuesta.querySelector(".form__orange2").style.display = "none";
-         respuesta.querySelector("label").style.boxShadow = "none";
-        }
-      });
+
+
+function ischecked(input){
+  return input.checked;
+}
+
+function buttonOn(questionInputs, button){
+  if (questionInputs.some(ischecked)){
+    button.disabled = false;
+    button.style.opacity = "1";
+  };
+};
+
+
+question1.addEventListener("click", (event) => {
+  buttonOn(question1_inputs, button1);
+});
+
+question2.addEventListener("click", (event) => {
+  buttonOn(question2_inputs, button2);
+});
+
+
+
+
+function incorrect(respuestas, respuesta_correcta){
+  respuesta_correcta.parentNode.querySelector(".form__orange1").classList.add("full-width");
+  event.currentTarget.style.display = "none";
+  respuestas.forEach((respuesta) => {
+    respuesta.style.color = "#CCCCCC";
+    respuesta.querySelector(".form__radio-button").style.display = "none";
+    if (respuesta.querySelector(".form__radio-input").checked) {
+        respuesta.querySelector(".form__orange1").classList.add("cross1");
+        respuesta.querySelector(".form__orange2").classList.add("cross2");
+    }else{
+      respuesta.querySelector(".form__orange1").style.display = "none";
+      respuesta.querySelector(".form__orange2").style.display = "none";
+      respuesta.querySelector("label").style.boxShadow = "none";
     }
+  });
+}
 
-    respuesta2.parentNode.querySelector(".form__orange1").classList.add("full-width")
+
+
+button1.addEventListener("click", (event) => {
+  event.preventDefault()
+  if (respuesta1.checked) {
+    document.querySelector(".test__answer__correct").style.maxHeight= "150rem";
+    incorrect(respuestas, respuesta1);
+  } else if (question1_inputs.some(ischecked)) {
+    document.querySelector(".test__answer__incorrect").style.maxHeight= "150rem";
+    incorrect(respuestas, respuesta1);
+  }
+});
+
+
+
+
+
+
+button2.addEventListener("click", (event) => {
+  event.preventDefault();
+  if (respuesta2.checked) {
+    document.querySelector(".test__answer__correct2").style.maxHeight= "150rem";
+    incorrect(respuestas2, respuesta2);
+  } else if (question2_inputs.some(ischecked)){
+    document.querySelector(".test__answer__incorrect2").style.maxHeight= "150rem";
+      incorrect(respuestas2, respuesta2);
+    }
     });
 
 // **********************************SIDEBAR****************************

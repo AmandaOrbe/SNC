@@ -117,15 +117,18 @@
       <div id="pregunta1">
         <%= partial(:'components/header1', :locals => { :text => t.pregunta1}) %>
         <p class="margin5"><%= t.pregunta1_text  %> </p>
-        <div class="test__answer__correct margin2">
+
+
+        <%= partial(:'components/test',  :locals => { :test_options => [t.pregunta1_opt_a, t.pregunta1_opt_b, t.pregunta1_opt_c, t.pregunta1_opt_d ], :name => "pregunta1", :correct => 0}) %>
+        <div class="test__answer__correct ">
           <h4>¡CORRECTO!</h4>
           <p><%= t.answer1 %></p>
           </div>
-        <div class="test__answer__incorrect margin2">
+
+        <div class="test__answer__incorrect ">
           <h4>¡INCORRECTO!</h4>
           <p><%= t.answer1  %></p>
         </div>
-        <%= partial(:'components/test',  :locals => { :test_options => [t.pregunta1_opt_a, t.pregunta1_opt_b, t.pregunta1_opt_c, t.pregunta1_opt_d ], :name => "Pregunta1", :correct => 0}) %>
       </div>
     </div>
 
@@ -134,15 +137,16 @@
 
       <%= partial(:'components/header1', :locals => { :text => t.pregunta2}) %>
       <p class="margin5"><%= t.pregunta2_text  %> </p>
-      <div class="test__answer__correct2 margin2">
+
+      <%= partial(:'components/test',  :locals => { :test_options => [t.pregunta2_opt_a, t.pregunta2_opt_b, t.pregunta2_opt_c, t.pregunta2_opt_d ], :name => "pregunta2", :correct => 0}) %>
+      <div class="test__answer__correct2 ">
         <h4>¡CORRECTO!</h4>
         <p><%= t.answer2 %></p>
         </div>
-      <div class="test__answer__incorrect2 margin2">
+      <div class="test__answer__incorrect2 ">
         <h4>¡INCORRECTO!</h4>
         <p><%= t.answer2  %></p>
       </div>
-      <%= partial(:'components/test',  :locals => { :test_options => [t.pregunta2_opt_a, t.pregunta2_opt_b, t.pregunta2_opt_c, t.pregunta2_opt_d ], :name => "Pregunta2", :correct => 0}) %>
 
     </div>
   </div>
