@@ -45,13 +45,31 @@
     height: calc(100vh - 25rem);
     overflow-y: scroll;
     overflow-x: visible;
+    border-right: 1px solid $gray;
+    transition: all .5s ease;
 
 
-    i{
+
+    &__invisible{
+    max-height: 6rem;
+    overflow: hidden;
+    // transition: all 2s ease;
+    }
+
+    // &__visible{
+    // max-height: 500rem;
+    // overflow: hidden;
+    // // transition: all 2s ease;
+    // }
+
+
+    .check{
       color: $orange;
       opacity: 0;
       padding-right: 1rem;
      }
+
+
 
     &__item{
       text-align: left;
@@ -67,7 +85,12 @@
       justify-content: space-between;
       align-items: center;
       overflow: hidden;
+      border-bottom: 1px solid $gray;
+      transition: all .5s ease;
     }
+
+
+
 
     &__chevron{
       position: absolute;
@@ -76,10 +99,20 @@
 
     }
 
+    &__chevron-down{
+      opacity: 0.5;
+    }
+
+    &__chevron-up{
+      transform: rotate(180deg);
+    }
+
     &__title{
       // background-color: $gray;
-      border-bottom: 1px solid $dark-gray;
-
+      color: black;
+      opacity: 1;
+      padding-right: 2rem;
+      // border-bottom: 1px solid $dark-gray
     }
 
     &__read{
