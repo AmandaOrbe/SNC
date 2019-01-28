@@ -12,35 +12,41 @@
       </div>
     </div>
 
-    <div class="sidebar__content">
-      <div class="sidebar__content__item sidebar__content__title">
-        CONTENIDOS
+    <div class="sidebar__content  ">
+
+      <div id="contenidos-tabs" class= "sidebar__content__invisible">
+        <div id= "contenidos-title" class="sidebar__content__item sidebar__content__title">
+          CONTENIDOS
+          <i class="fas fa-chevron-down sidebar__content__chevron-down"></i>
+        </div>
+        <% capitulos = [t.presentacion_side  , t.objetivos_side  , t.epidemiologia_side  , t.diagnostico_side , t.tratamiento_side  , t.inicio_side  , t.tendencias_side  ] %>
+        <% capitulos.each do |capitulo| %>
+
+        <a href = # class="sidebar__content__item sidebar__content__chapter" id= side_<%=capitulo.tr(" ", "")  %>>
+          <p><%= capitulo%></p>
+          <i class="fas fa-check-circle check "></i>
+          <span class="fas fa-chevron-right sidebar__content__chevron"></span>
+        </a>
+        <% end %>
       </div>
-      <% capitulos = [t.presentacion_side  , t.objetivos_side  , t.epidemiologia_side  , t.diagnostico_side , t.tratamiento_side  , t.inicio_side  , t.tendencias_side  ] %>
-      <% capitulos.each do |capitulo| %>
 
-      <a href = # class="sidebar__content__item sidebar__content__chapter" id= side_<%=capitulo.tr(" ", "")  %>>
-        <p><%= capitulo%></p>
-        <i class="fas fa-check-circle"></i>
-        <span class="fas fa-chevron-right sidebar__content__chevron"></span>
-      </a>
-      <% end %>
+      <div id="evaluacion-tabs"  class= "sidebar__content__invisible">
+        <div id= "evaluacion-title" class="sidebar__content__item sidebar__content__title">
+          EVALUACIÓN
+          <i class="fas fa-chevron-down sidebar__content__chevron-down"></i>
+        </div>
+        <a href="#pregunta1"  class="sidebar__content__item sidebar__content__chapter" id= "side_pregunta1">
+          <p>Pregunta 1</p>
+          <i class="fas fa-check-circle check"></i>
+          <span class="fas fa-chevron-right sidebar__content__chevron"></span>
 
-      <div class="sidebar__content__item sidebar__content__title">
-        EVALUACIÓN
+        </a>
+        <a href="#pregunta2"  class="sidebar__content__item sidebar__content__chapter" id= "side_pregunta2" >
+          <p>Pregunta 2</p>
+          <i class="fas fa-check-circle check"></i>
+          <span class="fas fa-chevron-right sidebar__content__chevron"></span>
+        </a>
       </div>
-      <a href="#pregunta1"  class="sidebar__content__item sidebar__content__chapter" id= "side_pregunta1">
-        <p>Pregunta 1</p>
-        <i class="fas fa-check-circle"></i>
-        <span class="fas fa-chevron-right sidebar__content__chevron"></span>
-
-      </a>
-      <a href="#pregunta2"  class="sidebar__content__item sidebar__content__chapter" id= "side_pregunta2" >
-        <p>Pregunta 2</p>
-        <i class="fas fa-check-circle"></i>
-        <span class="fas fa-chevron-right sidebar__content__chevron"></span>
-      </a>
-
 
     <a href="#bibliografia" class="sidebar__content__item sidebar__content__title">
         BIBLIOGRAFIA

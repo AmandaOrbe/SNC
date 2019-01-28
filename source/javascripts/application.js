@@ -173,6 +173,37 @@ const chapters = [{tab: presentacionTab, content: presentacion} ,
   document.getElementById("%number").innerText = Math.round(percentage*100);
 });
 
+
+
+
+ // *******************************  MENÚ CERRABLE ******************************
+
+const contenidos = document.getElementById('contenidos-title');
+
+
+
+  contenidos.addEventListener("click", (event) => {
+    event.currentTarget.parentNode.classList.toggle("sidebar__content__invisible");
+    event.currentTarget.querySelector(".sidebar__content__chevron-down").classList.toggle("sidebar__content__chevron-up");
+
+    // event.currentTarget.querySelector("i").classList.toggle("fa-plus");
+    // event.currentTarget.querySelector("i").classList.toggle("fa-minus");
+
+  });
+
+
+const evaluacion = document.getElementById('evaluacion-title');
+
+  evaluacion.addEventListener("click", (event) => {
+    event.currentTarget.parentNode.classList.toggle("sidebar__content__invisible");
+    event.currentTarget.querySelector(".sidebar__content__chevron-down").classList.toggle("sidebar__content__chevron-up");
+    // event.currentTarget.querySelector("i").classList.toggle("fa-plus");
+    // event.currentTarget.querySelector("i").classList.toggle("fa-minus");
+
+  });
+
+
+
 // window.addEventListener('scroll', () => {
 //   if (window.scrollY > 921){
 //     console.log("fin presentacion");
