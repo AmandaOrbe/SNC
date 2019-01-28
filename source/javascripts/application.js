@@ -10,6 +10,9 @@ cards.forEach((card) => {
 
   card.addEventListener("click", (event) => {
     event.currentTarget.classList.toggle("card__visible");
+    event.currentTarget.querySelector("i").classList.toggle("fa-plus");
+    event.currentTarget.querySelector("i").classList.toggle("fa-minus");
+
   });
 
 });
@@ -120,6 +123,12 @@ const inicio = document.getElementById("inicio");
 const tendenciasTab = document.getElementById("side_5.Tratamientoalarecaída:tendenciasactuales");
 const tendencias = document.getElementById("tendencias");
 
+const pregunta1Tab = document.getElementById("side_pregunta1");
+const pregunta1 = document.getElementById("pregunta1");
+
+const pregunta2Tab = document.getElementById("side_pregunta2");
+const pregunta2 = document.getElementById("pregunta2");
+
 
 
 const chapters = [{tab: presentacionTab, content: presentacion} ,
@@ -128,7 +137,10 @@ const chapters = [{tab: presentacionTab, content: presentacion} ,
                   {tab: diagnosticoTab, content: diagnostico},
                   {tab: tratamientoTab, content: tratamiento},
                   {tab: inicioTab, content: inicio},
-                  {tab: tendenciasTab, content: tendencias}
+                  {tab: tendenciasTab, content: tendencias},
+                  {tab: pregunta1Tab, content: pregunta1},
+                  {tab: pregunta2Tab, content: pregunta2},
+
                 ]
 
 
