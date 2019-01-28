@@ -18,6 +18,9 @@
 
   &__header{
     padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    display: flex;
+    justify-content: space-between;
   }
 
   h4{
@@ -25,6 +28,14 @@
     font-size: 1.6rem;
     font-weight: 700;
     margin-top: 2.5rem;
+  }
+
+  i{
+    font-size: 2rem;
+    // font-weight: 700;
+    margin-top: 2.5rem;
+    transition: all .5s ease-in-out;
+
   }
 
   &__body{
@@ -49,7 +60,7 @@
   }
 
   &:hover{
-    transform: translateY(-2px);
+    transform: translateY(-.5rem);
     box-shadow: $box-shadow-2;
 
   }

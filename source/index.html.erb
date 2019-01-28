@@ -10,7 +10,9 @@
 
         <div id="presentacion">
           <%= partial(:'components/header2', :locals => { :text => t.presentacion}) %>
-          <p class= "indented margin5 "> <%= t.presentacion_text %> <span class="container__highlight"><%= t.presentacion_span %></span></p>
+          <p class= "indented margin5 "> <%= t.presentacion_text1 %> </p>
+          <p class= "indented  "> <%= t.presentacion_text2 %> </p>
+            <p class="indented "><span class=" container__highlight"><%= t.presentacion_span %></span></p>
         </div>
 
         <div id="objetivos">
@@ -72,7 +74,7 @@
           <%= partial(:'components/list',  :locals => { :list_items => [t.mayor, t.tamaño2, t.codeleccion, t.mutacion, t.completa ]}) %>
           <p class="indented "><%= t.recomienda  %> </p>
 
-          <h3 class="margin7"><%= t.radioterapia  %> </h3>
+          <h3 class="margin7"> <%= t.radioterapia  %> </h3>
           <p class= "indented margin5">
             <span class="container__highlight"><%= t.radioterapia_span %></span>
             <%= t.radioterapia_text %>
@@ -128,6 +130,8 @@
     </div>
 
     <div class="content">
+      <div id="pregunta2">
+
       <%= partial(:'components/header1', :locals => { :text => t.pregunta2}) %>
       <p class="margin5"><%= t.pregunta2_text  %> </p>
       <div class="test__answer__correct2 margin2">
@@ -141,9 +145,10 @@
       <%= partial(:'components/test',  :locals => { :test_options => [t.pregunta2_opt_a, t.pregunta2_opt_b, t.pregunta2_opt_c, t.pregunta2_opt_d ], :name => "Pregunta2", :correct => 0}) %>
 
     </div>
+  </div>
 
 
-    <div class="content">
+    <div class="content" id="bibliografia">
       <%= partial(:'components/header1', :locals => { :text => t.bibliografia}) %>
       <br>
       <%= partial(:'components/header2', :locals => { :text => t.revistas}) %>
