@@ -116,7 +116,7 @@
     <div id="pregunta1" class="content">
       <div >
         <%= partial(:'components/header1', :locals => { :text => t.pregunta1}) %>
-        <p class="margin5"><%= t.pregunta1_text  %> </p>
+        <p class="margin5"><i> <%= t.pregunta1_text  %> </i></p>
 
 
         <%= partial(:'components/test',  :locals => { :test_options => [t.pregunta1_opt_a, t.pregunta1_opt_b, t.pregunta1_opt_c, t.pregunta1_opt_d ], :name => "pregunta1", :correct => 0}) %>
@@ -136,7 +136,7 @@
       <div >
 
       <%= partial(:'components/header1', :locals => { :text => t.pregunta2}) %>
-      <p class="margin5"><%= t.pregunta2_text  %> </p>
+      <p class="margin5"><i> <%= t.pregunta2_text  %> </i></p>
 
       <%= partial(:'components/test',  :locals => { :test_options => [t.pregunta2_opt_a, t.pregunta2_opt_b, t.pregunta2_opt_c, t.pregunta2_opt_d ], :name => "pregunta2", :correct => 0}) %>
       <div class="test__answer__correct2 ">
@@ -170,6 +170,64 @@
         <%= partial(:'components/biblio',  :locals => { :title => t.biblio11_title, :magazine => t.biblio11_magazine, :link => t.biblio11_link}) %>
       </ul>
     </div>
+
+    <div class="content">
+      <div id="pregunta3" >
+        <div >
+          <%= partial(:'components/header1', :locals => { :text => t.caso_practico}) %>
+          <h3 class="margin7"> <%= t.texto_planteamiento  %> </h3>
+
+          <p class="margin5"><span class="list__star">*</span><%= t.planteamiento1 %> </p>
+          <p class="margin2 " ><span class="list__star">*</span><%= t.planteamiento2 %> </p>
+          <p class="margin2 " ><span class="list__star">*</span><%= t.planteamiento3 %> </p>
+          <p  class="margin2 "><span class="list__star">*</span><%= t.planteamiento4 %> </p>
+          <p class="margin2 " ><span class="list__star">*</span><%= t.planteamiento5 %> </p>
+          <p class="margin2 " ><span class="list__star">*</span><%= t.planteamiento6 %> </p>
+
+
+          <h3 class="margin7"> <%= t.reflexion %> </h3>
+          <p class="margin5 " ><i> <%= t.pregunta_reflexion_1 %> </i></p>
+          <div class="margin5"> <%= partial(:'components/test',  :locals => { :test_options => [t.caso_practico_opt_a, t.caso_practico_opt_b, t.caso_practico_opt_c ], :name => "pregunta3", :correct => 0}) %>
+          </div>
+          <div class="test__answer__correct3">
+            <h4>¡CORRECTO!</h4>
+            <p><%= t.answer3 %></p>
+            </div>
+
+          <div class="test__answer__incorrect3 ">
+            <h4>¡INCORRECTO!</h4>
+            <p><%= t.answer3  %></p>
+          </div>
+        </div>
+      </div>
+
+      <div id="pregunta4">
+      <h3 class="margin7"> <%= t.continuacion  %> </h3>
+      <p class="margin5"> <%= t.texto_continuacion  %> </p>
+      <p class="margin5"> <i> <%= t.pregunta_continuacion  %></i> </p>
+      <div class="margin5"> <%= partial(:'components/test',  :locals => { :test_options => [t.caso_practico2_opt_a, t.caso_practico2_opt_b, t.caso_practico2_opt_c ], :name => "pregunta4", :correct => 0}) %>
+      </div>
+      <div class="test__answer__correct4">
+          <h4>¡CORRECTO!</h4>
+          <p><%= t.answer4_a  %></p>
+          <p><%= t.answer4_b  %></p>
+          <p><%= t.answer4_b  %></p>
+        </div>
+
+        <div class="test__answer__incorrect4 ">
+          <h4>¡INCORRECTO!</h4>
+          <p><%= t.answer4_a  %></p>
+          <p><%= t.answer4_b  %></p>
+          <p><%= t.answer4_b  %></p>
+        </div>
+
+
+      </div>
+    </div>
+
+
+
+
       </div>
   </div>
 </div>

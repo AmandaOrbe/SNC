@@ -130,9 +130,29 @@ diagnostico_side: 2. Diagnóstico patológico y molecular
 tratamiento_side: 3. Tratamiento post quirúrgico adyuvante
 inicio_side: 4. Tratamiento de la enfermedad no resecable de inicio
 tendencias_side: "5. Tratamiento a la recaída: tendencias actuales"
-
-
-
+caso_practico: "Casos clínicos "
+texto_planteamiento: "Texto de planteamiento del caso"
+planteamiento1: "Varón de 45 años, sin antecedentes de interés."
+planteamiento2: Cuenta historia de dos años de evolución de cefalea y, en los últimos meses, su familia le encuentra más despistado, como con “periodos de desconexión”. "
+planteamiento3: "Su médico decide realizarle una TAC, en la que se ve una aparente lesión hipocaptante en área temporal derecha, que recomienda completar con una resonancia magnética. "
+planteamiento4: "En esta, se observa en el nivel referido por la TAC, una lesión hipointensa en T1, bien delimitada, con hiperintensidad de señal en T2, de 7 cm de diámetro"
+planteamiento5: "Tras presentar el caso en sesión multidisplinar, el paciente es intervenido y dado de alta sin incidencias"
+planteamiento6: "En la reunión del comité de tumores, se recibe el diagnóstico definitivo de oligodendroglioma con codelección 1p/19q y mutación en IDH1."
+reflexion: "Pregunta reflexión"
+pregunta_reflexion_1: "¿Cuál sería, de los siguientes, el tratamiento menos adecuado en términos de supervivencia?"
+caso_practico_opt_a: "Observación y tratamiento a la recaída"
+caso_practico_opt_b:  "Quimioterapia basada en temozolomida y reservar la radioterapia  a la recaída"
+caso_practico_opt_c:  "Radioterapia seguido de quimioterapia "
+answer3: El paciente presenta, al menos, dos factores de alto riesgo (tamaño y edad) por lo que, a pesar de ser un tumor con dos factores muy buen pronóstico (codelección 1p/19q y mutación en IDH), no se cumplen todos los factores para tener a la mera observación como una opción óptima.
+continuacion: Continuación del caso
+texto_continuacion: "El paciente, tras valorar todas las opciones, decide realizar tratamiento completo. "
+pregunta_continuacion: "¿Cuál de las siguientes opciones sería la óptima?"
+caso_practico2_opt_a: Radioterapia 60 Gy seguido de PCV x 6 ciclos
+caso_practico2_opt_b: Radioterapia 50.4 - 54 Gy seguido de temozolomida 150 mg/m2
+caso_practico2_opt_c: Radioterapia 50.4 – 54 Gy seguido de PCV x 6 ciclos
+answer4_a: "El mayor grado de evidencia para un tratamiento adyuvante en gliomas de bajo grado y alto riesgo es la RDT seguida de PCV, ya que esta ha demostrado aumento de supervivencia en un estudio aleatorizado frente a RDT sola. "
+answer4_b: " La dosis de la RDT se recomienda que sea 50.4 – 54Gy, ya que dosis más altas no han demostrado mayor eficacia y sí mayor toxicidad."
+answer4_c: "La opción B, si bien es valorable, no cuenta con el grado de evidencia que el PCV, aunque se puede discutir con el paciente según sus preferencias; en todo caso, el estudio que aporta una evidencia menor al PCV para este esquema, era con una primera fase de temozolomida concomitante. "
 
 
 
