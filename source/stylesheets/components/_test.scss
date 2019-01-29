@@ -2,15 +2,12 @@
 
   position: relative;
 
-
-
   &__radio-label{
-    width: 80%;
+    width: 100%;
     box-shadow: $box-shadow;
-
     margin-top: 1rem;
     transition: all 1s ease-in-out;
-    height: 6rem;
+    height: 7rem;
     overflow: hidden;
     position: relative;
     cursor: pointer;
@@ -22,7 +19,7 @@
   &__orange2{
 
     display: block;
-    height: 6rem;
+    height: 7rem;
     width: 8px;
     position: absolute;
     top: 0;
@@ -43,8 +40,9 @@
     font-weight: 100;
     margin-top: 2.5rem;
     margin-left: 2.5rem;
-     position: absolute;
+    position: absolute;
     left: 4rem;
+    line-height: 2rem;
   }
 
   &__radio-button{
@@ -72,7 +70,11 @@
 .test__answer__correct,
 .test__answer__incorrect,
 .test__answer__correct2,
-.test__answer__incorrect2{
+.test__answer__incorrect2,
+.test__answer__correct3,
+.test__answer__incorrect3,
+.test__answer__correct4,
+.test__answer__incorrect4{
   max-height: 0;
   overflow: hidden;
   transition: all 1s ease;

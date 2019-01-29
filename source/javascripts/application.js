@@ -34,26 +34,39 @@ const respuestas2 = [document.querySelectorAll('.form__group')[4], document.quer
 const question2_inputs = [radio_inputs[4], radio_inputs[5], radio_inputs[6], radio_inputs[7]];
 
 
+const respuesta3 = document.getElementById("Observaciónytratamientoalarecaída")
+const button3 = document.getElementById("pregunta3__button")
+const question3 = document.getElementById("pregunta3");
+const respuestas3 = [document.querySelectorAll('.form__group')[9], document.querySelectorAll('.form__group')[10]];
+const question3_inputs = [radio_inputs[8], radio_inputs[9], radio_inputs[10]];
+
+const respuesta4 = document.getElementById("Radioterapia50.4–54GyseguidodePCVx6ciclos")
+const button4 = document.getElementById("pregunta4__button")
+const question4 = document.getElementById("pregunta4");
+const respuestas4 = [document.querySelectorAll('.form__group')[11], document.querySelectorAll('.form__group')[12]];
+const question4_inputs = [radio_inputs[11], radio_inputs[12], radio_inputs[13]];
+
+
 const presentacionTab = document.getElementById("side_Presentación");
-const presentacion = document.getElementById("presentacion");
+const presentacion = document.getElementById("Prese");
 
 const objetivosTab = document.getElementById("side_Objetivos");
-const objetivos = document.getElementById("objetivos");
+const objetivos = document.getElementById("Objet");
 
 const epidemiologiaTab = document.getElementById("side_1.Epidemiologíaydiagnóstico");
-const epidemiologia = document.getElementById("epidemiologia");
+const epidemiologia = document.getElementById("1.Epi");
 
 const diagnosticoTab = document.getElementById("side_2.Diagnósticopatológicoymolecular");
-const diagnostico = document.getElementById("diagnostico");
+const diagnostico = document.getElementById("2.Dia");
 
 const tratamientoTab = document.getElementById("side_3.Tratamientopostquirúrgicoadyuvante");
-const tratamiento = document.getElementById("tratamiento");
+const tratamiento = document.getElementById("3.Tra");
 
 const inicioTab = document.getElementById("side_4.Tratamientodelaenfermedadnoresecabledeinicio");
-const inicio = document.getElementById("inicio");
+const inicio = document.getElementById("4.Tra");
 
 const tendenciasTab = document.getElementById("side_5.Tratamientoalarecaída:tendenciasactuales");
-const tendencias = document.getElementById("tendencias");
+const tendencias = document.getElementById("5.Tra");
 
 const pregunta1Tab = document.getElementById("side_pregunta1");
 const pregunta1 = document.getElementById("pregunta1");
@@ -96,6 +109,16 @@ question1.addEventListener("click", (event) => {
 
 question2.addEventListener("click", (event) => {
   buttonOn(question2_inputs, button2);
+});
+
+
+question3.addEventListener("click", (event) => {
+  buttonOn(question3_inputs, button3);
+});
+
+
+question4.addEventListener("click", (event) => {
+  buttonOn(question4_inputs, button4);
 });
 
 
@@ -142,8 +165,6 @@ button1.addEventListener("click", (event) => {
 
 
 
-
-
 button2.addEventListener("click", (event) => {
   event.preventDefault();
   pregunta2Tab.classList.add('sidebar__content__read');
@@ -158,8 +179,43 @@ button2.addEventListener("click", (event) => {
     const Pregunta2 = false;
     document.querySelector(".test__answer__incorrect2").style.maxHeight= "150rem";
       solution(respuestas2, respuesta2);
-    }
-    });
+  }
+});
+
+button3.addEventListener("click", (event) => {
+  event.preventDefault();
+  // pregunta3Tab.classList.add('sidebar__content__read');
+  // pregunta3Tab.querySelector(".sidebar__content__chevron").remove();
+  if (respuesta3.checked) {
+    // const Pregunta3 = true;
+    document.querySelector(".test__answer__correct3").style.maxHeight= "150rem";
+    solution(respuestas3, respuesta3);
+  } else if (question3_inputs.some(ischecked)){
+    // pregunta3Tab.querySelector("i").classList.replace("fa-check-circle", "fa-times-circle") ;
+    // pregunta3Tab.querySelector("i").classList.replace("green", "red") ;
+    // const Pregunta3 = false;
+    document.querySelector(".test__answer__incorrect3").style.maxHeight= "150rem";
+      solution(respuestas3, respuesta3);
+  }
+});
+
+
+button4.addEventListener("click", (event) => {
+  event.preventDefault();
+  // pregunta4Tab.classList.add('sidebar__content__read');
+  // pregunta4Tab.querySelector(".sidebar__content__chevron").remove();
+  if (respuesta4.checked) {
+    // const Pregunta4 = true;
+    document.querySelector(".test__answer__correct4").style.maxHeight= "150rem";
+    solution(respuestas4, respuesta4);
+  } else if (question4_inputs.some(ischecked)){
+    // pregunta4Tab.querySelector("i").classList.replace("fa-check-circle", "fa-times-circle") ;
+    // pregunta4Tab.querySelector("i").classList.replace("green", "red") ;
+    // const Pregunta4 = false;
+    document.querySelector(".test__answer__incorrect4").style.maxHeight= "150rem";
+      solution(respuestas4, respuesta4);
+  }
+});
 
 // **********************************SIDEBAR****************************
 
