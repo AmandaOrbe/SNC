@@ -19,32 +19,43 @@ cards.forEach((card) => {
 
 // **********************************CONSTANS****************************
 
-const respuesta1 = document.getElementById("Codelección1p/19qymutacióndeIDH");
+const radioInputs = document.querySelectorAll('.form__radio-input');
+
+
+const respuestaCorrecta1 = document.getElementById("Codelección1p/19qymutacióndeIDH");
 const button1 = document.getElementById("pregunta1__button");
 const question1 = document.getElementById("pregunta1");
-const respuestas = [document.querySelectorAll('.form__group')[0], document.querySelectorAll('.form__group')[1], document.querySelectorAll('.form__group')[3]];
-const radio_inputs = document.querySelectorAll('.form__radio-input');
-const question1_inputs = [radio_inputs[0], radio_inputs[1], radio_inputs[2], radio_inputs[3]];
+const respuestasIncorrectas1 = [document.querySelectorAll('.form__group')[0], document.querySelectorAll('.form__group')[1], document.querySelectorAll('.form__group')[3]];
+const question1Inputs = [radioInputs[0], radioInputs[1], radioInputs[2], radioInputs[3]];
+const testAnswerCorrect1 = document.querySelector(".test__answer__correct");
+const testAnswerInorrect1 = document.querySelector(".test__answer__incorrect");
 
-
-const respuesta2 = document.getElementById("Procarbacina,lomustinayvincristina")
+const respuestaCorrecta2 = document.getElementById("Procarbacina,lomustinayvincristina")
 const button2 = document.getElementById("pregunta2__button")
 const question2 = document.getElementById("pregunta2");
-const respuestas2 = [document.querySelectorAll('.form__group')[4], document.querySelectorAll('.form__group')[5], document.querySelectorAll('.form__group')[7]];
-const question2_inputs = [radio_inputs[4], radio_inputs[5], radio_inputs[6], radio_inputs[7]];
+const respuestasIncorrectas2 = [document.querySelectorAll('.form__group')[4], document.querySelectorAll('.form__group')[5], document.querySelectorAll('.form__group')[7]];
+const question2Inputs = [radioInputs[4], radioInputs[5], radioInputs[6], radioInputs[7]];
+const testAnswerCorrect2 = document.querySelector(".test__answer__correct2");
+const testAnswerInorrect2 = document.querySelector(".test__answer__incorrect2");
 
 
-const respuesta3 = document.getElementById("Observaciónytratamientoalarecaída")
+
+const respuestaCorrecta3 = document.getElementById("Observaciónytratamientoalarecaída")
 const button3 = document.getElementById("pregunta3__button")
 const question3 = document.getElementById("pregunta3");
-const respuestas3 = [document.querySelectorAll('.form__group')[9], document.querySelectorAll('.form__group')[10]];
-const question3_inputs = [radio_inputs[8], radio_inputs[9], radio_inputs[10]];
+const respuestasIncorrectas3 = [document.querySelectorAll('.form__group')[9], document.querySelectorAll('.form__group')[10]];
+const question3Inputs = [radioInputs[8], radioInputs[9], radioInputs[10]];
+const testAnswerCorrect3 = document.querySelector(".test__answer__correct3");
+const testAnswerInorrect3 = document.querySelector(".test__answer__incorrect3");
 
-const respuesta4 = document.getElementById("Radioterapia50.4–54GyseguidodePCVx6ciclos")
+
+const respuestaCorrecta4 = document.getElementById("Radioterapia50.4–54GyseguidodePCVx6ciclos")
 const button4 = document.getElementById("pregunta4__button")
 const question4 = document.getElementById("pregunta4");
-const respuestas4 = [document.querySelectorAll('.form__group')[11], document.querySelectorAll('.form__group')[12]];
-const question4_inputs = [radio_inputs[11], radio_inputs[12], radio_inputs[13]];
+const respuestasIncorrectas4 = [document.querySelectorAll('.form__group')[11], document.querySelectorAll('.form__group')[12]];
+const question4Inputs = [radioInputs[11], radioInputs[12], radioInputs[13]];
+const testAnswerCorrect4 = document.querySelector(".test__answer__correct4");
+const testAnswerInorrect4 = document.querySelector(".test__answer__incorrect4");
 
 
 const presentacionTab = document.getElementById("side_Presentación");
@@ -103,31 +114,25 @@ function buttonOn(questionInputs, button){
 };
 
 
-question1.addEventListener("click", (event) => {
-  buttonOn(question1_inputs, button1);
-});
-
-question2.addEventListener("click", (event) => {
-  buttonOn(question2_inputs, button2);
-});
 
 
-question3.addEventListener("click", (event) => {
-  buttonOn(question3_inputs, button3);
-});
+function updateQuestionTabs(preguntaTab, pregunta){
+ if(localStorage.getItem(pregunta) === "true") {
+  preguntaTab.classList.add('sidebar__content__read');
+  preguntaTab.querySelector("i").classList.replace("fa-times-circle", "fa-check-circle") ;
+  preguntaTab.querySelector("i").classList.replace("red","green") ;
+  preguntaTab.querySelector(".sidebar__content__chevron").style.display = "none";
+ } else if (localStorage.getItem(pregunta) === "false") {
+  preguntaTab.classList.add('sidebar__content__read');
+  preguntaTab.querySelector(".sidebar__content__chevron").style.display = "none";
+  preguntaTab.querySelector("i").classList.replace("fa-check-circle", "fa-times-circle") ;
+  preguntaTab.querySelector("i").classList.replace("green", "red") ;
+ }
+}
 
 
-question4.addEventListener("click", (event) => {
-  buttonOn(question4_inputs, button4);
-});
-
-
-
-
-function solution(respuestas, respuesta_correcta){
-  respuesta_correcta.parentNode.querySelector(".form__orange1").classList.add("full-width");
-  event.currentTarget.style.display = "none";
-  respuestas.forEach((respuesta) => {
+function incorrectAnswers(respuestasIncorrectas){
+  respuestasIncorrectas.forEach((respuesta) => {
     respuesta.style.color = "#CCCCCC";
     respuesta.querySelector(".form__radio-button").style.display = "none";
     if (respuesta.querySelector(".form__radio-input").checked) {
@@ -141,81 +146,73 @@ function solution(respuestas, respuesta_correcta){
   });
 }
 
+function solution(respuestasIncorrectas, respuestaCorrecta){
+  respuestaCorrecta.parentNode.querySelector(".form__orange1").classList.add("full-width");
+  event.currentTarget.style.display = "none";
+  incorrectAnswers(respuestasIncorrectas)
+}
 
 
-button1.addEventListener("click", (event) => {
-  event.preventDefault()
-  pregunta1Tab.classList.add('sidebar__content__read');
-  pregunta1Tab.querySelector(".sidebar__content__chevron").remove();
-  if (respuesta1.checked) {
-    const Pregunta1 = true;
-    document.querySelector(".test__answer__correct").style.maxHeight= "150rem";
-    solution(respuestas, respuesta1);
-  } else if (question1_inputs.some(ischecked)) {
-    pregunta1Tab.querySelector("i").classList.replace("fa-check-circle", "fa-times-circle") ;
-    pregunta1Tab.querySelector("i").classList.replace("green", "red") ;
-
-    // list.insertAdjacentHTML("beforeend", "<li>Luke</li>")
-    const Pregunta1 = false;
-    document.querySelector(".test__answer__incorrect").style.maxHeight= "150rem";
-    solution(respuestas, respuesta1);
+function checkSolution(respuestaCorrecta, questionInputs, respuestasIncorrectas, pregunta, testAnswerCorrect, testAnswerIncorrect){
+  if (respuestaCorrecta.checked) {
+    localStorage.setItem(pregunta, true );
+    testAnswerCorrect.style.maxHeight= "150rem";
+    solution(respuestasIncorrectas, respuestaCorrecta );
+  } else if (questionInputs.some(ischecked)) {
+    localStorage.setItem(pregunta, false );
+    testAnswerIncorrect.style.maxHeight= "150rem";
+    solution(respuestasIncorrectas, respuestaCorrecta);
   }
+}
+
+question1.addEventListener("click", (event) => {
+  buttonOn(question1Inputs, button1);
+});
+
+question2.addEventListener("click", (event) => {
+  buttonOn(question2Inputs, button2);
 });
 
 
+question3.addEventListener("click", (event) => {
+  buttonOn(question3Inputs, button3);
+});
 
+
+question4.addEventListener("click", (event) => {
+  buttonOn(question4Inputs, button4);
+});
+
+
+button1.addEventListener("click", (event) => {
+  event.preventDefault();
+  console.log("hello" + (respuestasIncorrectas1.some(ischecked)));
+  checkSolution(respuestaCorrecta1, question1Inputs, respuestasIncorrectas1, "pregunta1" , testAnswerCorrect1, testAnswerInorrect1);
+  updateQuestionTabs(pregunta1Tab, "pregunta1");
+});
 
 button2.addEventListener("click", (event) => {
   event.preventDefault();
-  pregunta2Tab.classList.add('sidebar__content__read');
-  pregunta2Tab.querySelector(".sidebar__content__chevron").remove();
-  if (respuesta2.checked) {
-    const Pregunta2 = true;
-    document.querySelector(".test__answer__correct2").style.maxHeight= "150rem";
-    solution(respuestas2, respuesta2);
-  } else if (question2_inputs.some(ischecked)){
-    pregunta2Tab.querySelector("i").classList.replace("fa-check-circle", "fa-times-circle") ;
-    pregunta2Tab.querySelector("i").classList.replace("green", "red") ;
-    const Pregunta2 = false;
-    document.querySelector(".test__answer__incorrect2").style.maxHeight= "150rem";
-      solution(respuestas2, respuesta2);
-  }
+  console.log("button event listener")
+  checkSolution(respuestaCorrecta2, question2Inputs, respuestasIncorrectas2, "pregunta2" ,testAnswerCorrect2, testAnswerInorrect2);
+  updateQuestionTabs(pregunta2Tab, "pregunta2");
 });
 
 button3.addEventListener("click", (event) => {
   event.preventDefault();
-  // pregunta3Tab.classList.add('sidebar__content__read');
-  // pregunta3Tab.querySelector(".sidebar__content__chevron").remove();
-  if (respuesta3.checked) {
-    // const Pregunta3 = true;
-    document.querySelector(".test__answer__correct3").style.maxHeight= "150rem";
-    solution(respuestas3, respuesta3);
-  } else if (question3_inputs.some(ischecked)){
-    // pregunta3Tab.querySelector("i").classList.replace("fa-check-circle", "fa-times-circle") ;
-    // pregunta3Tab.querySelector("i").classList.replace("green", "red") ;
-    // const Pregunta3 = false;
-    document.querySelector(".test__answer__incorrect3").style.maxHeight= "150rem";
-      solution(respuestas3, respuesta3);
-  }
+  checkSolution(respuestaCorrecta3, question3Inputs, respuestasIncorrectas3, testAnswerCorrect3, testAnswerInorrect3);
 });
 
 
 button4.addEventListener("click", (event) => {
   event.preventDefault();
-  // pregunta4Tab.classList.add('sidebar__content__read');
-  // pregunta4Tab.querySelector(".sidebar__content__chevron").remove();
-  if (respuesta4.checked) {
-    // const Pregunta4 = true;
-    document.querySelector(".test__answer__correct4").style.maxHeight= "150rem";
-    solution(respuestas4, respuesta4);
-  } else if (question4_inputs.some(ischecked)){
-    // pregunta4Tab.querySelector("i").classList.replace("fa-check-circle", "fa-times-circle") ;
-    // pregunta4Tab.querySelector("i").classList.replace("green", "red") ;
-    // const Pregunta4 = false;
-    document.querySelector(".test__answer__incorrect4").style.maxHeight= "150rem";
-      solution(respuestas4, respuesta4);
-  }
+  checkSolution(respuestaCorrecta4, question4Inputs, respuestasIncorrectas4, testAnswerCorrect4, testAnswerInorrect4);
 });
+
+
+
+
+
 
 // **********************************SIDEBAR****************************
 
@@ -259,6 +256,21 @@ window.addEventListener('scroll', () => {
 
 });
 
+// **************************** LOCAL STORAGE*****************************
+
+
+
+window.addEventListener('scroll', () => {
+  localStorage.setItem("windowHeight", window.scrollY  );
+});
+
+window.addEventListener('load', () => {
+  window.scrollTo(0, localStorage.getItem('windowHeight'))
+  updateQuestionTabs(pregunta1Tab, "pregunta1");
+  updateQuestionTabs(pregunta2Tab, "pregunta2");
+});
+
+
 
 
 
@@ -282,9 +294,6 @@ const contenidos = document.getElementById('contenidos-title');
     event.currentTarget.parentNode.classList.toggle("sidebar__content__invisible");
     event.currentTarget.querySelector(".sidebar__content__chevron-down").classList.toggle("sidebar__content__chevron-up");
 
-    // event.currentTarget.querySelector("i").classList.toggle("fa-plus");
-    // event.currentTarget.querySelector("i").classList.toggle("fa-minus");
-
   });
 
 
@@ -293,33 +302,11 @@ const evaluacion = document.getElementById('evaluacion-title');
   evaluacion.addEventListener("click", (event) => {
     event.currentTarget.parentNode.classList.toggle("sidebar__content__invisible");
     event.currentTarget.querySelector(".sidebar__content__chevron-down").classList.toggle("sidebar__content__chevron-up");
-    // event.currentTarget.querySelector("i").classList.toggle("fa-plus");
-    // event.currentTarget.querySelector("i").classList.toggle("fa-minus");
 
   });
 
 
 
-// window.addEventListener('scroll', () => {
-//   if (window.scrollY > 921){
-//     console.log("fin presentacion");
-//   };
-// });
-
-// window.addEventListener('scroll', () => {
-//   if (window.scrollY > 1242){
-//     console.log("fin objetivos");
-//   };
-// });
-
-// console.log("presentacion va de " + presentacion.offsetTop + "a" + (presentacion.offsetTop + presentacion.scrollHeight) )
-// console.log("objetivos va de " + objetivos.offsetTop + "a" + (objetivos.offsetTop + objetivos.scrollHeight) + "objetivos mide " + objetivos.scrollHeight)
-// console.log("epidemiologia va de " + epidemiologia.offsetTop + "a" + (epidemiologia.offsetTop + epidemiologia.scrollHeight) )
-// console.log("diagnostico va de " + diagnostico.offsetTop + "a" + (diagnostico.offsetTop + diagnostico.scrollHeight) )
-
-// console.log(presentacion.offsetTop + "<" + (window.scrollY +500)  + "<" + (presentacion.offsetTop + presentacion.scrollHeight));
-// console.log((window.scrollY +500) );
-// console.log(presentacion.offsetTop + presentacion.scrollHeight);
 
 
 
