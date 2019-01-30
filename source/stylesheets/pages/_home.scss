@@ -10,7 +10,9 @@
 
 .main{
   width:  calc(100% - 30rem);
-   background-color: $light-gray;
+   background-color: white;
+       box-shadow: $box-shadow;
+
   position: absolute;
   right: 0;
   display: flex;
