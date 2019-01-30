@@ -7,7 +7,16 @@
     background-color: $white;
     padding: 8rem 10rem 8rem 10rem;
     min-height: 20rem;
+
+    &--2{
+      margin: 4rem ;
+      box-shadow: $box-shadow;
+      background-color: $white;
+      padding: 8rem 16rem 8rem 16rem;
+      min-height: 20rem;
+    }
   }
+
 
   .orange{
       color: $orange;

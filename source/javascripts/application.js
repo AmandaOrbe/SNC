@@ -79,6 +79,9 @@ const inicio = document.getElementById("4.Tra");
 const tendenciasTab = document.getElementById("side_5.Tratamientoalarecaída:tendenciasactuales");
 const tendencias = document.getElementById("5.Tra");
 
+const biblioTab = document.getElementById("side_bibliografia");
+const biblio = document.getElementById("bibliografia");
+
 const pregunta1Tab = document.getElementById("side_pregunta1");
 const pregunta1 = document.getElementById("pregunta1");
 
@@ -100,6 +103,8 @@ const chapters = [{tab: presentacionTab, content: presentacion} ,
                   {tab: tratamientoTab, content: tratamiento},
                   {tab: inicioTab, content: inicio},
                   {tab: tendenciasTab, content: tendencias},
+                  {tab: tendenciasTab, content: tendencias},
+                  {tab: biblioTab, content: biblio},
                 ]
 
 const questions = [ {tab: pregunta1Tab, content: pregunta1},
