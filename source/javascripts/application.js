@@ -186,14 +186,12 @@ question4.addEventListener("click", (event) => {
 
 button1.addEventListener("click", (event) => {
   event.preventDefault();
-  console.log("hello" + (respuestasIncorrectas1.some(ischecked)));
   checkSolution(respuestaCorrecta1, question1Inputs, respuestasIncorrectas1, "pregunta1" , testAnswerCorrect1, testAnswerInorrect1);
   updateQuestionTabs(pregunta1Tab, "pregunta1");
 });
 
 button2.addEventListener("click", (event) => {
   event.preventDefault();
-  console.log("button event listener")
   checkSolution(respuestaCorrecta2, question2Inputs, respuestasIncorrectas2, "pregunta2" ,testAnswerCorrect2, testAnswerInorrect2);
   updateQuestionTabs(pregunta2Tab, "pregunta2");
 });
