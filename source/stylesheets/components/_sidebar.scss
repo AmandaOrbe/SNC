@@ -2,7 +2,7 @@
    position: fixed;
   left: 0px;
   top: 0px;
-  width: 30rem;
+  width: 27rem;
   display: block;
   height:500rem;
 }
@@ -11,7 +11,7 @@
   position:  absolute;
   top: 0px;
   height:100vh;
-  width: 30rem;
+  width: 27rem;
   text-align: center;
   display: block;
 
@@ -31,7 +31,7 @@
     width: 30rem;
     padding-left: 4rem;
     padding-top: 4rem;
-    height:25rem;
+    height:27rem;
 
   }
 
@@ -40,8 +40,8 @@
     display: block;
     position: absolute;
     left: 0px;
-    top: 25rem;
-    width: 30rem;
+    top: 27rem;
+    width: 27rem;
     height: calc(100vh - 25rem);
     overflow-y: scroll;
     overflow-x: visible;
@@ -66,31 +66,34 @@
     .check{
       color: $orange;
       opacity: 0;
-      padding-right: 1rem;
+      padding-right: .5rem;
+      padding-left: .5rem;
      }
 
     .green{
       color: $green;
       opacity: 0;
-      padding-right: 1rem;
+      padding-right: .5rem;
+      padding-left: .5rem;
     }
 
     .red{
       color: red;
-      padding-right: 1rem;
+      padding-right: .5rem;
+      padding-left: .5rem;
     }
 
 
     &__item{
       text-align: left;
-      width: 30rem;
+      width: 27rem;
       height: 6rem;
       position: relative;
       padding-left: 4rem;
-      padding-right: 1rem;
+      padding-right: 2rem;
       font-weight: 100;
       opacity: .6;
-      font-size: 1.5rem;
+      font-size: 1.2rem;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -105,7 +108,7 @@
 
     &__chevron{
       position: absolute;
-      left: 26rem;
+      left: 25rem;
       opacity: 0;
 
     }
@@ -139,7 +142,7 @@
       font-weight: 300;
       border-left: 10px solid $orange;
       padding-left: 3rem;
-      width: 30rem !important;
+      width: 27rem !important;
       box-shadow: $box-shadow;
       border-right: none !important;
       z-index:1500;
@@ -159,7 +162,7 @@
     color: white;
     font: $headers-font;
     font-weight: 300;
-    font-size: 3.6rem;
+    font-size: 2.8rem;
   }
 
   &__percentage{

@@ -1,15 +1,15 @@
 .container{
-
+  border: 1px solid red;
 
   .content{
     margin: 4rem ;
     // box-shadow: $box-shadow;
     background-color: $white;
-    padding: 8rem 10rem 8rem 10rem;
+    padding: 8rem 20rem 8rem 20rem;
     min-height: 20rem;
 
     &--2{
-      margin: 4rem ;
+      margin: 6rem 14rem ;
       box-shadow: $box-shadow;
       background-color: $white;
       padding: 8rem 16rem 8rem 16rem;
@@ -54,9 +54,9 @@
 
 
   p{
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     font-weight: 300;
-    line-height: 2.2rem;
+    line-height: 2.6rem;
 
   }
 
