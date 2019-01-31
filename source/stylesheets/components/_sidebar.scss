@@ -42,7 +42,7 @@
     left: 0px;
     top: 27rem;
     width: 27rem;
-    height: calc(100vh - 25rem);
+    height: calc(100vh - 27rem);
     overflow-y: scroll;
     overflow-x: visible;
     // border-right: 1px solid $gray;
@@ -108,7 +108,7 @@
 
     &__chevron{
       position: absolute;
-      left: 25rem;
+      left: 23rem;
       opacity: 0;
 
     }
@@ -187,7 +187,7 @@
       position: absolute;
       bottom: 0rem;
       left: 0rem;
-      transition: all 1s ease-in-out;
+      transition: all .5s ease;
       background-color: white;
       z-index: 0;
 
@@ -198,7 +198,7 @@
       }
 
       &--2{
-        width: 6rem;
+        width: 0rem;
         opacity: 1;
       }
 
