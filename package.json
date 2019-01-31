@@ -5,4 +5,13 @@
   "repository": "git@github.com:AmandaOrbe/SNC.git",
   "author": "(Amanda Orbe) <garayomiriam@gmail.com>",
   "license": "MIT"
+  {
+  "presets": [
+    ["env", {
+      "modules": false,
+      "targets": {
+        "uglify": true,
+      }
+   ]
+}
 }
