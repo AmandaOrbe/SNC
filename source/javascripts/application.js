@@ -305,7 +305,7 @@ window.addEventListener('load', function(){
  window.addEventListener('scroll', function(){
   var percentage = ( window.scrollY)/((document.querySelector("#home").scrollHeight) - window.innerHeight );
   document.querySelector(".sidebar__percentage__bar--2").style.width = percentage * 20.7+"rem"
-  document.getElementById("%number").innerText = Math.round(percentage*100);
+  document.getElementById("%number").innerText = Math.round(percentage*100) + "% completado";
 });
 
 

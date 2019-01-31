@@ -1,17 +1,19 @@
 .container{
-  border: 1px solid red;
 
   .content{
-    margin: 4rem ;
+    margin: 4rem auto ;
     // box-shadow: $box-shadow;
     background-color: $white;
-    padding: 8rem 20rem 8rem 20rem;
+    // padding: 8rem 20rem 8rem 20rem;
+    width:  65rem;
     min-height: 20rem;
 
     &--2{
-      margin: 6rem 14rem ;
+
+      margin: 6rem auto ;
       box-shadow: $box-shadow;
       background-color: $white;
+      width: 80rem;
       padding: 8rem 16rem 8rem 16rem;
       min-height: 20rem;
     }
