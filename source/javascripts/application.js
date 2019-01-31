@@ -207,16 +207,16 @@ question4.addEventListener("click", function(event){
 
 button1.addEventListener("click", function(event){
   event.preventDefault();
-  checkSolution(respuestaCorrecta1, question1Inputs, respuestasIncorrectas1, "pregunta1" , testAnswerCorrect1, testAnswerInorrect1);
+  checkSolution(respuestaCorrecta1, question1Inputs, respuestasIncorrectas1, "pregunta1" , testAnswerCorrect1, testAnswerIncorrect1);
   updateQuestionTabs(pregunta1Tab, "pregunta1");
 });
 
 button2.addEventListener("click", function(event){
   event.preventDefault();
 
-  checkSolution(respuestaCorrecta2, question2Inputs, respuestasIncorrectas2, "pregunta2" ,testAnswerCorrect2, testAnswerInorrect2);
+  checkSolution(respuestaCorrecta2, question2Inputs, respuestasIncorrectas2, "pregunta2" ,testAnswerCorrect2, testAnswerIncorrect2);
 
-  
+
   updateQuestionTabs(pregunta2Tab, "pregunta2");
 });
 
