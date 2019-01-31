@@ -6,16 +6,18 @@
 
 const cards = document.querySelectorAll('.card')
 
-// cards.forEach((card) => {
+cards.forEach(function(card){
 
-//   card.addEventListener("click", (event) => {
-//     event.currentTarget.classList.toggle("card__visible");
-//     event.currentTarget.querySelector("i").classList.toggle("fa-plus");
-//     event.currentTarget.querySelector("i").classList.toggle("fa-minus");
+  card.addEventListener("click", function(event){
+    event.currentTarget.classList.toggle("card__visible");
+    event.currentTarget.querySelector("i").classList.toggle("fa-plus");
+    event.currentTarget.querySelector("i").classList.toggle("fa-minus");
 
-//   });
+  });
 
-// });
+});
+
+
 
 // **********************************CONSTANS****************************
 
@@ -131,20 +133,23 @@ function updateQuestionTabs(preguntaTab, pregunta){
 }
 
 
-// function incorrectAnswers(respuestasIncorrectas){
-//   respuestasIncorrectas.forEach((respuesta) => {
-//     respuesta.style.color = "#CCCCCC";
-//     respuesta.querySelector(".form__radio-button").style.display = "none";
-//     if (respuesta.querySelector(".form__radio-input").checked) {
-//         respuesta.querySelector(".form__orange1").classList.add("cross1");
-//         respuesta.querySelector(".form__orange2").classList.add("cross2");
-//     }else{
-//       respuesta.querySelector(".form__orange1").style.display = "none";
-//       respuesta.querySelector(".form__orange2").style.display = "none";
-//       respuesta.querySelector("label").style.boxShadow = "none";
-//     }
-//   });
-// }
+function incorrectAnswers(respuestasIncorrectas){
+  respuestasIncorrectas.forEach(function(respuesta){
+    respuesta.style.color = "#CCCCCC";
+    respuesta.querySelector(".form__radio-button").style.display = "none";
+    if (respuesta.querySelector(".form__radio-input").checked) {
+        respuesta.querySelector(".form__orange1").classList.add("cross1");
+        respuesta.querySelector(".form__orange2").classList.add("cross2");
+    }else{
+      respuesta.querySelector(".form__orange1").style.display = "none";
+      respuesta.querySelector(".form__orange2").style.display = "none";
+      respuesta.querySelector("label").style.boxShadow = "none";
+    }
+  });
+}
+
+
+
 
 function solution(respuestasIncorrectas, respuestaCorrecta){
   respuestaCorrecta.parentNode.querySelector(".form__orange1").classList.add("full-width");
@@ -165,143 +170,146 @@ function checkSolution(respuestaCorrecta, questionInputs, respuestasIncorrectas,
   }
 }
 
-// question1.addEventListener("click", (event) => {
-//   buttonOn(question1Inputs, button1);
-// });
+question1.addEventListener("click", function(event){
+  buttonOn(question1Inputs, button1);
+});
 
-// question2.addEventListener("click", (event) => {
-//   buttonOn(question2Inputs, button2);
-// });
-
-
-// question3.addEventListener("click", (event) => {
-//   buttonOn(question3Inputs, button3);
-// });
+question2.addEventListener("click", function(event){
+  buttonOn(question2Inputs, button2);
+});
 
 
-// question4.addEventListener("click", (event) => {
-//   buttonOn(question4Inputs, button4);
-// });
+question3.addEventListener("click", function(event){
+  buttonOn(question3Inputs, button3);
+});
 
 
-// button1.addEventListener("click", (event) => {
-//   event.preventDefault();
-//   checkSolution(respuestaCorrecta1, question1Inputs, respuestasIncorrectas1, "pregunta1" , testAnswerCorrect1, testAnswerInorrect1);
-//   updateQuestionTabs(pregunta1Tab, "pregunta1");
-// });
-
-// button2.addEventListener("click", (event) => {
-//   event.preventDefault();
-//   checkSolution(respuestaCorrecta2, question2Inputs, respuestasIncorrectas2, "pregunta2" ,testAnswerCorrect2, testAnswerInorrect2);
-//   updateQuestionTabs(pregunta2Tab, "pregunta2");
-// });
-
-// button3.addEventListener("click", (event) => {
-//   event.preventDefault();
-//   checkSolution(respuestaCorrecta3, question3Inputs, respuestasIncorrectas3, testAnswerCorrect3, testAnswerInorrect3);
-// });
-
-
-// button4.addEventListener("click", (event) => {
-//   event.preventDefault();
-//   checkSolution(respuestaCorrecta4, question4Inputs, respuestasIncorrectas4, testAnswerCorrect4, testAnswerInorrect4);
-// });
+question4.addEventListener("click", function(event){
+  buttonOn(question4Inputs, button4);
+});
 
 
 
 
 
+button1.addEventListener("click", function(event){
+  event.preventDefault();
+  checkSolution(respuestaCorrecta1, question1Inputs, respuestasIncorrectas1, "pregunta1" , testAnswerCorrect1, testAnswerInorrect1);
+  updateQuestionTabs(pregunta1Tab, "pregunta1");
+});
 
-// **********************************SIDEBAR****************************
+button2.addEventListener("click", function(event){
+  event.preventDefault();
+  checkSolution(respuestaCorrecta2, question2Inputs, respuestasIncorrectas2, "pregunta2" ,testAnswerCorrect2, testAnswerInorrect2);
+  updateQuestionTabs(pregunta2Tab, "pregunta2");
+});
 
-
-
-
-// window.addEventListener('scroll', () => {
-//   chapters.forEach((chapter) => {
-//     if (chapter.content.offsetTop < (window.scrollY ) && (window.scrollY ) < (chapter.content.offsetTop + chapter.content.scrollHeight)) {
-//       chapter.tab.classList.add('sidebar__content__current');
-//       chapter.tab.classList.remove('sidebar__content__read');
-
-//       } else if ((window.scrollY ) >= (chapter.content.offsetTop + chapter.content.scrollHeight)){
-//         chapter.tab.classList.remove('sidebar__content__current');
-//         chapter.tab.classList.add('sidebar__content__read');
-//         // console.log(chapter.tab.classList + "is" + chapter.content.offsetTop  )
-//       } else if (chapter.tab.classList.contains('sidebar__content__current') && (chapter.content.offsetTop > (window.scrollY )))  {
-//         chapter.tab.classList.remove('sidebar__content__current');
-//         // chapter.tab.classList.remove('sidebar__content__read');
-//       }
-//     });
-
-// });
+button3.addEventListener("click", function(event){
+  event.preventDefault();
+  checkSolution(respuestaCorrecta3, question3Inputs, respuestasIncorrectas3, testAnswerCorrect3, testAnswerInorrect3);
+});
 
 
-// window.addEventListener('scroll', () => {
-//   questions.forEach((question) => {
-//     if (question.content.offsetTop < (window.scrollY ) && (window.scrollY ) < (question.content.offsetTop + question.content.scrollHeight)) {
-//       question.tab.classList.add('sidebar__content__current');
-//       // question.tab.classList.remove('sidebar__content__read');
-
-//       } else if ((window.scrollY ) >= (question.content.offsetTop + question.content.scrollHeight)){
-//         question.tab.classList.remove('sidebar__content__current');
-//         // question.tab.classList.add('sidebar__content__read');
-//         // console.log(question.tab.classList + "is" + question.content.offsetTop  )
-//       } else if (question.tab.classList.contains('sidebar__content__current') && (question.content.offsetTop > (window.scrollY )))  {
-//         question.tab.classList.remove('sidebar__content__current');
-//         // question.tab.classList.remove('sidebar__content__read');
-//       }
-//     });
-
-// });
-
-// **************************** LOCAL STORAGE*****************************
-
-
-
-// window.addEventListener('scroll', () => {
-//   localStorage.setItem("windowHeight", window.scrollY  );
-// });
-
-// window.addEventListener('load', () => {
-//   window.scrollTo(0, localStorage.getItem('windowHeight'))
-//   updateQuestionTabs(pregunta1Tab, "pregunta1");
-//   updateQuestionTabs(pregunta2Tab, "pregunta2");
-// });
+button4.addEventListener("click", function(event){
+  event.preventDefault();
+  checkSolution(respuestaCorrecta4, question4Inputs, respuestasIncorrectas4, testAnswerCorrect4, testAnswerInorrect4);
+});
 
 
 
 
 
-  // ***************************PERCENTAGE*******************************
-//  window.addEventListener('scroll', () => {
-//   let percentage = ( window.scrollY)/((document.querySelector("#home").scrollHeight) - window.innerHeight );
-//   document.querySelector(".sidebar__percentage__bar--2").style.width = `${percentage * 20.7}rem`
-//   document.getElementById("%number").innerText = Math.round(percentage*100);
-// });
+
+// // **********************************SIDEBAR****************************
 
 
 
 
- // *******************************  MENÚ CERRABLE ******************************
+window.addEventListener('scroll', function(){
+  chapters.forEach(function(chapter){
+    if (chapter.content.offsetTop < (window.scrollY ) && (window.scrollY ) < (chapter.content.offsetTop + chapter.content.scrollHeight)) {
+      chapter.tab.classList.add('sidebar__content__current');
+      chapter.tab.classList.remove('sidebar__content__read');
+
+      } else if ((window.scrollY ) >= (chapter.content.offsetTop + chapter.content.scrollHeight)){
+        chapter.tab.classList.remove('sidebar__content__current');
+        chapter.tab.classList.add('sidebar__content__read');
+        // console.log(chapter.tab.classList + "is" + chapter.content.offsetTop  )
+      } else if (chapter.tab.classList.contains('sidebar__content__current') && (chapter.content.offsetTop > (window.scrollY )))  {
+        chapter.tab.classList.remove('sidebar__content__current');
+        // chapter.tab.classList.remove('sidebar__content__read');
+      }
+    });
+
+});
+
+
+window.addEventListener('scroll', function(){
+  questions.forEach(function(question) {
+    if (question.content.offsetTop < (window.scrollY ) && (window.scrollY ) < (question.content.offsetTop + question.content.scrollHeight)) {
+      question.tab.classList.add('sidebar__content__current');
+      // question.tab.classList.remove('sidebar__content__read');
+
+      } else if ((window.scrollY ) >= (question.content.offsetTop + question.content.scrollHeight)){
+        question.tab.classList.remove('sidebar__content__current');
+        // question.tab.classList.add('sidebar__content__read');
+        // console.log(question.tab.classList + "is" + question.content.offsetTop  )
+      } else if (question.tab.classList.contains('sidebar__content__current') && (question.content.offsetTop > (window.scrollY )))  {
+        question.tab.classList.remove('sidebar__content__current');
+        // question.tab.classList.remove('sidebar__content__read');
+      }
+    });
+
+});
+
+// // **************************** LOCAL STORAGE*****************************
+
+
+
+window.addEventListener('scroll', function(){
+  localStorage.setItem("windowHeight", window.scrollY  );
+});
+
+window.addEventListener('load', function(){
+  window.scrollTo(0, localStorage.getItem('windowHeight'))
+  updateQuestionTabs(pregunta1Tab, "pregunta1");
+  updateQuestionTabs(pregunta2Tab, "pregunta2");
+});
+
+
+
+
+
+//   // ***************************PERCENTAGE*******************************
+ window.addEventListener('scroll', function(){
+  var percentage = ( window.scrollY)/((document.querySelector("#home").scrollHeight) - window.innerHeight );
+  document.querySelector(".sidebar__percentage__bar--2").style.width = percentage * 20.7+"rem"
+  document.getElementById("%number").innerText = Math.round(percentage*100);
+});
+
+
+
+
+//  // *******************************  MENÚ CERRABLE ******************************
 
 const contenidos = document.getElementById('contenidos-title');
 
 
 
-//   contenidos.addEventListener("click", (event) => {
-//     event.currentTarget.parentNode.classList.toggle("sidebar__content__invisible");
-//     event.currentTarget.querySelector(".sidebar__content__chevron-down").classList.toggle("sidebar__content__chevron-up");
+  contenidos.addEventListener("click", function(event){
+    event.currentTarget.parentNode.classList.toggle("sidebar__content__invisible");
+    event.currentTarget.querySelector(".sidebar__content__chevron-down").classList.toggle("sidebar__content__chevron-up");
 
-//   });
+  });
 
 
-// const evaluacion = document.getElementById('evaluacion-title');
+const evaluacion = document.getElementById('evaluacion-title');
 
-//   evaluacion.addEventListener("click", (event) => {
-//     event.currentTarget.parentNode.classList.toggle("sidebar__content__invisible");
-//     event.currentTarget.querySelector(".sidebar__content__chevron-down").classList.toggle("sidebar__content__chevron-up");
+  evaluacion.addEventListener("click", function(event){
+    event.currentTarget.parentNode.classList.toggle("sidebar__content__invisible");
+    event.currentTarget.querySelector(".sidebar__content__chevron-down").classList.toggle("sidebar__content__chevron-up");
 
-//   });
+  });
 
 
 

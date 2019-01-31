@@ -4,14 +4,10 @@
   "main": "index.js",
   "repository": "git@github.com:AmandaOrbe/SNC.git",
   "author": "(Amanda Orbe) <garayomiriam@gmail.com>",
-  "license": "MIT"
-  {
-  "presets": [
-    ["env", {
-      "modules": false,
-      "targets": {
-        "uglify": true,
-      }
-   ]
-}
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-es2015": "^6.24.1"
+  }
+
 }
