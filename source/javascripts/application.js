@@ -30,7 +30,7 @@ const question1 = document.getElementById("pregunta1");
 const respuestasIncorrectas1 = [document.querySelectorAll('.form__group')[0], document.querySelectorAll('.form__group')[1], document.querySelectorAll('.form__group')[3]];
 const question1Inputs = [radioInputs[0], radioInputs[1], radioInputs[2], radioInputs[3]];
 const testAnswerCorrect1 = document.querySelector(".test__answer__correct");
-const testAnswerInorrect1 = document.querySelector(".test__answer__incorrect");
+const testAnswerIncorrect1 = document.querySelector(".test__answer__incorrect");
 
 const respuestaCorrecta2 = document.getElementById("Procarbacina,lomustinayvincristina")
 const button2 = document.getElementById("pregunta2__button")
@@ -38,7 +38,7 @@ const question2 = document.getElementById("pregunta2");
 const respuestasIncorrectas2 = [document.querySelectorAll('.form__group')[4], document.querySelectorAll('.form__group')[5], document.querySelectorAll('.form__group')[7]];
 const question2Inputs = [radioInputs[4], radioInputs[5], radioInputs[6], radioInputs[7]];
 const testAnswerCorrect2 = document.querySelector(".test__answer__correct2");
-const testAnswerInorrect2 = document.querySelector(".test__answer__incorrect2");
+const testAnswerIncorrect2 = document.querySelector(".test__answer__incorrect2");
 
 
 
@@ -48,7 +48,7 @@ const question3 = document.getElementById("pregunta3");
 const respuestasIncorrectas3 = [document.querySelectorAll('.form__group')[9], document.querySelectorAll('.form__group')[10]];
 const question3Inputs = [radioInputs[8], radioInputs[9], radioInputs[10]];
 const testAnswerCorrect3 = document.querySelector(".test__answer__correct3");
-const testAnswerInorrect3 = document.querySelector(".test__answer__incorrect3");
+const testAnswerIncorrect3 = document.querySelector(".test__answer__incorrect3");
 
 
 const respuestaCorrecta4 = document.getElementById("Radioterapia50.4–54GyseguidodePCVx6ciclos")
@@ -57,7 +57,7 @@ const question4 = document.getElementById("pregunta4");
 const respuestasIncorrectas4 = [document.querySelectorAll('.form__group')[11], document.querySelectorAll('.form__group')[12]];
 const question4Inputs = [radioInputs[11], radioInputs[12], radioInputs[13]];
 const testAnswerCorrect4 = document.querySelector(".test__answer__correct4");
-const testAnswerInorrect4 = document.querySelector(".test__answer__incorrect4");
+const testAnswerIncorrect4 = document.querySelector(".test__answer__incorrect4");
 
 
 const presentacionTab = document.getElementById("side_Presentación");
@@ -81,11 +81,20 @@ const inicio = document.getElementById("4.Tra");
 const tendenciasTab = document.getElementById("side_5.Tratamientoalarecaída:tendenciasactuales");
 const tendencias = document.getElementById("5.Tra");
 
+const biblioTab = document.getElementById("side_bibliografia");
+const biblio = document.getElementById("bibliografia");
+
 const pregunta1Tab = document.getElementById("side_pregunta1");
 const pregunta1 = document.getElementById("pregunta1");
 
 const pregunta2Tab = document.getElementById("side_pregunta2");
 const pregunta2 = document.getElementById("pregunta2");
+
+const pregunta3Tab = document.getElementById("side_pregunta3");
+const pregunta3 = document.getElementById("pregunta3");
+
+const pregunta4Tab = document.getElementById("side_pregunta4");
+const pregunta4 = document.getElementById("pregunta4");
 
 
 
@@ -96,10 +105,14 @@ const chapters = [{tab: presentacionTab, content: presentacion} ,
                   {tab: tratamientoTab, content: tratamiento},
                   {tab: inicioTab, content: inicio},
                   {tab: tendenciasTab, content: tendencias},
+                  {tab: tendenciasTab, content: tendencias},
+                  {tab: biblioTab, content: biblio},
                 ]
 
 const questions = [ {tab: pregunta1Tab, content: pregunta1},
                     {tab: pregunta2Tab, content: pregunta2},
+                    {tab: pregunta3Tab, content: pregunta3},
+                    {tab: pregunta4Tab, content: pregunta4},
                   ]
 
 //  ************************************ QUIZ *************************
@@ -200,19 +213,24 @@ button1.addEventListener("click", function(event){
 
 button2.addEventListener("click", function(event){
   event.preventDefault();
+
   checkSolution(respuestaCorrecta2, question2Inputs, respuestasIncorrectas2, "pregunta2" ,testAnswerCorrect2, testAnswerInorrect2);
+
+  
   updateQuestionTabs(pregunta2Tab, "pregunta2");
 });
 
 button3.addEventListener("click", function(event){
   event.preventDefault();
-  checkSolution(respuestaCorrecta3, question3Inputs, respuestasIncorrectas3, testAnswerCorrect3, testAnswerInorrect3);
+  checkSolution(respuestaCorrecta3, question3Inputs, respuestasIncorrectas3, "pregunta3" , testAnswerCorrect3, testAnswerIncorrect3);
+  updateQuestionTabs(pregunta3Tab, "pregunta3");
 });
 
 
 button4.addEventListener("click", function(event){
   event.preventDefault();
-  checkSolution(respuestaCorrecta4, question4Inputs, respuestasIncorrectas4, testAnswerCorrect4, testAnswerInorrect4);
+  checkSolution(respuestaCorrecta4, question4Inputs, respuestasIncorrectas4, "pregunta4" , testAnswerCorrect4, testAnswerIncorrect4);
+  updateQuestionTabs(pregunta4Tab, "pregunta4");
 });
 
 
@@ -255,6 +273,7 @@ window.addEventListener('scroll', function(){
         // question.tab.classList.add('sidebar__content__read');
         // console.log(question.tab.classList + "is" + question.content.offsetTop  )
       } else if (question.tab.classList.contains('sidebar__content__current') && (question.content.offsetTop > (window.scrollY )))  {
+       console.log(question.tab);
         question.tab.classList.remove('sidebar__content__current');
         // question.tab.classList.remove('sidebar__content__read');
       }
@@ -274,6 +293,8 @@ window.addEventListener('load', function(){
   window.scrollTo(0, localStorage.getItem('windowHeight'))
   updateQuestionTabs(pregunta1Tab, "pregunta1");
   updateQuestionTabs(pregunta2Tab, "pregunta2");
+  updateQuestionTabs(pregunta3Tab, "pregunta3");
+  updateQuestionTabs(pregunta4Tab, "pregunta4");
 });
 
 
@@ -307,7 +328,7 @@ const evaluacion = document.getElementById('evaluacion-title');
 
   evaluacion.addEventListener("click", function(event){
     event.currentTarget.parentNode.classList.toggle("sidebar__content__invisible");
-    event.currentTarget.querySelector(".sidebar__content__chevron-down").classList.toggle("sidebar__content__chevron-up");
+    event.currentTarget.querySelector("sidebar__content__chevron-up").classList.toggle(".sidebar__content__chevron-down");
 
   });
 

@@ -45,7 +45,7 @@
     height: calc(100vh - 25rem);
     overflow-y: scroll;
     overflow-x: visible;
-    border-right: 1px solid $gray;
+    // border-right: 1px solid $gray;
     transition: all .5s ease;
 
 
@@ -96,6 +96,7 @@
       align-items: center;
       overflow: hidden;
       border-bottom: 1px solid $gray;
+      border-right: 1px solid $gray;
       transition: all .5s ease;
     }
 
@@ -140,6 +141,8 @@
       padding-left: 3rem;
       width: 30rem !important;
       box-shadow: $box-shadow;
+      border-right: none !important;
+      z-index:1500;
     }
 
     &__current &__chevron{

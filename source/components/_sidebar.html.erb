@@ -14,7 +14,7 @@
 
     <div class="sidebar__content  ">
 
-      <div id="contenidos-tabs" class= "sidebar__content__invisible">
+      <div id="contenidos-tabs" >
         <div id= "contenidos-title" class="sidebar__content__item sidebar__content__title">
           CONTENIDOS
           <i class="fas fa-chevron-down sidebar__content__chevron-down"></i>
@@ -30,7 +30,7 @@
         <% end %>
       </div>
 
-      <div id="evaluacion-tabs"  class= "sidebar__content__invisible">
+      <div id="evaluacion-tabs" >
         <div id= "evaluacion-title" class="sidebar__content__item sidebar__content__title">
           EVALUACIÓN
           <i class="fas fa-chevron-down sidebar__content__chevron-down"></i>
@@ -48,13 +48,29 @@
         </a>
       </div>
 
-    <a href="#bibliografia" class="sidebar__content__item sidebar__content__title">
+    <a id="side_bibliografia" href="#bibliografia" class="sidebar__content__item sidebar__content__title">
         BIBLIOGRAFIA
-      </a>
+    </a>
 
-    <div class="sidebar__content__item sidebar__content__title">
-        CASO PRÁCTICO
+
+      <div id="caso-practico-tabs" >
+          <a id= "caso-practico-title" href="#caso_practico" class="sidebar__content__item sidebar__content__title">
+            <%= t.caso_practico.upcase  %>
+            <i class="fas fa-chevron-down sidebar__content__chevron-down"></i>
+          </a>
+        <a href="#pregunta3"  class="sidebar__content__item sidebar__content__chapter" id= "side_pregunta3">
+          <p>Pregunta de reflexión</p>
+          <i class="fas fa-check-circle green"></i>
+          <span class="fas fa-chevron-right sidebar__content__chevron"></span>
+
+        </a>
+        <a href="#pregunta4"  class="sidebar__content__item sidebar__content__chapter" id= "side_pregunta4" >
+          <p>Continuación del caso</p>
+          <i class="fas fa-check-circle  green"></i>
+          <span class="fas fa-chevron-right sidebar__content__chevron"></span>
+        </a>
       </div>
+
  </div>
 
   </div>
