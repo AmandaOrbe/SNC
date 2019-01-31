@@ -6,9 +6,9 @@
 
 const cards = document.querySelectorAll('.card')
 
-cards.forEach((card) => {
+cards.forEach(function(card){
 
-  card.addEventListener("click", (event) => {
+  card.addEventListener("click", function(event){
     event.currentTarget.classList.toggle("card__visible");
     event.currentTarget.querySelector("i").classList.toggle("fa-plus");
     event.currentTarget.querySelector("i").classList.toggle("fa-minus");
@@ -16,6 +16,8 @@ cards.forEach((card) => {
   });
 
 });
+
+
 
 // **********************************CONSTANS****************************
 
@@ -145,7 +147,7 @@ function updateQuestionTabs(preguntaTab, pregunta){
 
 
 function incorrectAnswers(respuestasIncorrectas){
-  respuestasIncorrectas.forEach((respuesta) => {
+  respuestasIncorrectas.forEach(function(respuesta){
     respuesta.style.color = "#CCCCCC";
     respuesta.querySelector(".form__radio-button").style.display = "none";
     if (respuesta.querySelector(".form__radio-input").checked) {
@@ -158,6 +160,9 @@ function incorrectAnswers(respuestasIncorrectas){
     }
   });
 }
+
+
+
 
 function solution(respuestasIncorrectas, respuestaCorrecta){
   respuestaCorrecta.parentNode.querySelector(".form__orange1").classList.add("full-width");
@@ -178,47 +183,51 @@ function checkSolution(respuestaCorrecta, questionInputs, respuestasIncorrectas,
   }
 }
 
-question1.addEventListener("click", (event) => {
+question1.addEventListener("click", function(event){
   buttonOn(question1Inputs, button1);
 });
 
-question2.addEventListener("click", (event) => {
+question2.addEventListener("click", function(event){
   buttonOn(question2Inputs, button2);
 });
 
 
-question3.addEventListener("click", (event) => {
+question3.addEventListener("click", function(event){
   buttonOn(question3Inputs, button3);
 });
 
 
-question4.addEventListener("click", (event) => {
+question4.addEventListener("click", function(event){
   buttonOn(question4Inputs, button4);
 });
 
 
-button1.addEventListener("click", (event) => {
+
+
+
+button1.addEventListener("click", function(event){
   event.preventDefault();
-  console.log("hello" + (respuestasIncorrectas1.some(ischecked)));
-  checkSolution(respuestaCorrecta1, question1Inputs, respuestasIncorrectas1, "pregunta1" , testAnswerCorrect1, testAnswerIncorrect1);
+  checkSolution(respuestaCorrecta1, question1Inputs, respuestasIncorrectas1, "pregunta1" , testAnswerCorrect1, testAnswerInorrect1);
   updateQuestionTabs(pregunta1Tab, "pregunta1");
 });
 
-button2.addEventListener("click", (event) => {
+button2.addEventListener("click", function(event){
   event.preventDefault();
-  console.log("button event listener")
-  checkSolution(respuestaCorrecta2, question2Inputs, respuestasIncorrectas2, "pregunta2" ,testAnswerCorrect2, testAnswerIncorrect2);
+
+  checkSolution(respuestaCorrecta2, question2Inputs, respuestasIncorrectas2, "pregunta2" ,testAnswerCorrect2, testAnswerInorrect2);
+
+  
   updateQuestionTabs(pregunta2Tab, "pregunta2");
 });
 
-button3.addEventListener("click", (event) => {
+button3.addEventListener("click", function(event){
   event.preventDefault();
   checkSolution(respuestaCorrecta3, question3Inputs, respuestasIncorrectas3, "pregunta3" , testAnswerCorrect3, testAnswerIncorrect3);
   updateQuestionTabs(pregunta3Tab, "pregunta3");
 });
 
 
-button4.addEventListener("click", (event) => {
+button4.addEventListener("click", function(event){
   event.preventDefault();
   checkSolution(respuestaCorrecta4, question4Inputs, respuestasIncorrectas4, "pregunta4" , testAnswerCorrect4, testAnswerIncorrect4);
   updateQuestionTabs(pregunta4Tab, "pregunta4");
@@ -229,13 +238,13 @@ button4.addEventListener("click", (event) => {
 
 
 
-// **********************************SIDEBAR****************************
+// // **********************************SIDEBAR****************************
 
 
 
 
-window.addEventListener('scroll', () => {
-  chapters.forEach((chapter) => {
+window.addEventListener('scroll', function(){
+  chapters.forEach(function(chapter){
     if (chapter.content.offsetTop < (window.scrollY ) && (window.scrollY ) < (chapter.content.offsetTop + chapter.content.scrollHeight)) {
       chapter.tab.classList.add('sidebar__content__current');
       chapter.tab.classList.remove('sidebar__content__read');
@@ -253,8 +262,8 @@ window.addEventListener('scroll', () => {
 });
 
 
-window.addEventListener('scroll', () => {
-  questions.forEach((question) => {
+window.addEventListener('scroll', function(){
+  questions.forEach(function(question) {
     if (question.content.offsetTop < (window.scrollY ) && (window.scrollY ) < (question.content.offsetTop + question.content.scrollHeight)) {
       question.tab.classList.add('sidebar__content__current');
       // question.tab.classList.remove('sidebar__content__read');
@@ -272,15 +281,15 @@ window.addEventListener('scroll', () => {
 
 });
 
-// **************************** LOCAL STORAGE*****************************
+// // **************************** LOCAL STORAGE*****************************
 
 
 
-window.addEventListener('scroll', () => {
+window.addEventListener('scroll', function(){
   localStorage.setItem("windowHeight", window.scrollY  );
 });
 
-window.addEventListener('load', () => {
+window.addEventListener('load', function(){
   window.scrollTo(0, localStorage.getItem('windowHeight'))
   updateQuestionTabs(pregunta1Tab, "pregunta1");
   updateQuestionTabs(pregunta2Tab, "pregunta2");
@@ -292,23 +301,23 @@ window.addEventListener('load', () => {
 
 
 
-  // ***************************PERCENTAGE*******************************
- window.addEventListener('scroll', () => {
-  let percentage = ( window.scrollY)/((document.querySelector("#home").scrollHeight) - window.innerHeight );
-  document.querySelector(".sidebar__percentage__bar--2").style.width = `${percentage * 20.7}rem`
+//   // ***************************PERCENTAGE*******************************
+ window.addEventListener('scroll', function(){
+  var percentage = ( window.scrollY)/((document.querySelector("#home").scrollHeight) - window.innerHeight );
+  document.querySelector(".sidebar__percentage__bar--2").style.width = percentage * 20.7+"rem"
   document.getElementById("%number").innerText = Math.round(percentage*100);
 });
 
 
 
 
- // *******************************  MENÚ CERRABLE ******************************
+//  // *******************************  MENÚ CERRABLE ******************************
 
 const contenidos = document.getElementById('contenidos-title');
 
 
 
-  contenidos.addEventListener("click", (event) => {
+  contenidos.addEventListener("click", function(event){
     event.currentTarget.parentNode.classList.toggle("sidebar__content__invisible");
     event.currentTarget.querySelector(".sidebar__content__chevron-down").classList.toggle("sidebar__content__chevron-up");
 
@@ -317,7 +326,7 @@ const contenidos = document.getElementById('contenidos-title');
 
 const evaluacion = document.getElementById('evaluacion-title');
 
-  evaluacion.addEventListener("click", (event) => {
+  evaluacion.addEventListener("click", function(event){
     event.currentTarget.parentNode.classList.toggle("sidebar__content__invisible");
     event.currentTarget.querySelector("sidebar__content__chevron-up").classList.toggle(".sidebar__content__chevron-down");
 
