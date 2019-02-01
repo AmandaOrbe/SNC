@@ -2,6 +2,10 @@
   margin-left: 9rem;
   margin-top: 4rem;
   list-style: none;
+   @include respond(portrait) { // width < 1200
+      margin-left: 3rem;
+      width: 77%;
+    }
   li{
     min-height: 5rem;
     font-weight: 100;

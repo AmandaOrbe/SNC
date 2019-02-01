@@ -1,6 +1,9 @@
 .card_row{
   display: flex;
   justify-content: space-between;
+   @include respond(portrait) { // width < 1200
+      display: block;
+    }
 
 }
 
@@ -12,7 +15,10 @@
   transition: all .5s ease-in-out;
   max-height: 7rem;
   overflow: hidden;
-
+  @include respond(portrait) { // width < 1200
+      margin: 4rem auto;
+      width: 77%;
+    }
 
 
 
@@ -21,6 +27,9 @@
     padding-right: 2.5rem;
     display: flex;
     justify-content: space-between;
+    @include respond(landscape) { // width < 1200
+      padding-left: 1.5rem; //1rem = 9px,  9/16 = 56,25%
+    }
   }
 
   h4{
@@ -33,7 +42,7 @@
   i{
     font-size: 2rem;
     // font-weight: 700;
-    margin-top: 2.5rem;
+    margin-top: 2.4rem;
     transition: all .5s ease-in-out;
 
   }

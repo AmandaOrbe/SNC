@@ -34,6 +34,10 @@
   margin-top: 3rem;
   position: relative;
   transition: all .2s;
+   @include respond(portrait) { // width < 1200
+      margin: 4rem auto;
+      width: 77%;
+    }
 
   &__image{
     display: flex;
@@ -93,4 +97,9 @@
 .image-modal-header{
   height: 6rem;
   width: 100%;
+}
+
+
+.image-modal__image img {
+      height: 49rem;
 }
