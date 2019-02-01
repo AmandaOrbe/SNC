@@ -1,6 +1,9 @@
 .card_row{
   display: flex;
   justify-content: space-between;
+   @include respond(portrait) { // width < 1200
+      display: block;
+    }
 
 }
 
@@ -12,7 +15,10 @@
   transition: all .5s ease-in-out;
   max-height: 7rem;
   overflow: hidden;
-
+  @include respond(portrait) { // width < 1200
+      margin: 4rem auto;
+      width: 77%;
+    }
 
 
 

@@ -20,7 +20,7 @@ html{
   @include respond(portrait) { // width < 900 -->more specific: it should be later on our code
     background-color: blue;
 
-    font-size: 45% !important; //1rem = 8px,  8/16 = 50%
+    font-size: 50% !important; //1rem = 8px,  8/16 = 50%
   }
 
   @include respond(phone) {
