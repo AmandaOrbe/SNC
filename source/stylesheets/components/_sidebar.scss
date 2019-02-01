@@ -2,7 +2,7 @@
    position: fixed;
   left: 0px;
   top: 0px;
-  width: 27rem;
+  width: 28rem;
   display: block;
   height:500rem;
    @include respond(portrait) { // width < 1200
@@ -17,7 +17,7 @@
   position:  absolute;
   top: 0px;
   height:100vh;
-  width: 27rem;
+  width: 28rem;
   text-align: center;
   display: block;
   font-family: $headers-font;
@@ -42,7 +42,7 @@
     top: 0px;
     padding-left: 4rem;
     padding-top: 4rem;
-    height:27rem;
+    height:28rem;
     @include respond(portrait) { // width < 1200
       height:24rem; //1rem = 9px,  9/16 = 56,25%
     }
@@ -54,9 +54,9 @@
     display: block;
     position: absolute;
     left: 0px;
-    top: 27rem;
-    // width: 27rem;
-    height: calc(100vh - 27rem);
+    top: 28rem;
+    // width: 28rem;
+    height: calc(100vh - 28rem);
     overflow-y: scroll;
     overflow-x: visible;
     // border-right: 1px solid $gray;
@@ -104,7 +104,7 @@
 
     &__item{
       text-align: left;
-      width: 27rem;
+      width: 28rem;
       height: 6rem;
       position: relative;
       padding-left: 4rem;
@@ -119,9 +119,13 @@
       border-bottom: 1px solid $gray;
       border-right: 1px solid $gray;
       transition: all .5s ease;
-      background-color:azure;
-      @include respond(portrait) { // width < 1200
+      @include respond(landscape) {
+      // background-color:lightcoral;
+
+      }  @include respond(portrait) { // width < 1200
         width:24rem; //1rem = 9px,  9/16 = 56,25%
+      background-color:azure;
+
       }
        @include respond(phone) { // width < 1200
       width:0; //1rem = 9px,  9/16 = 56,25%
