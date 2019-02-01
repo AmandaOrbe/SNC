@@ -1,12 +1,18 @@
 .container{
+  width: 100%;
 
   .content{
     margin: 4rem auto ;
-    // box-shadow: $box-shadow;
     background-color: $white;
-    // padding: 8rem 20rem 8rem 20rem;
     width:  65rem;
     min-height: 20rem;
+    // border: 1px solid pink;
+    @include respond(landscape) { // width < 1200
+      width:55rem; //1rem = 9px,  9/16 = 56,25%
+    }
+    @include respond(portrait) { // width < 1200
+      width:40rem; //1rem = 9px,  9/16 = 56,25%
+    }
 
     &--2{
 
@@ -16,6 +22,14 @@
       width: 80rem;
       padding: 8rem 16rem 8rem 16rem;
       min-height: 20rem;
+
+      @include respond(landscape) { // width < 1200
+        width:60rem; //1rem = 9px,  9/16 = 56,25%
+        padding: 6rem 8rem 6rem 8rem;
+      }
+      @include respond(portrait) { // width < 1200
+        width:40rem; //1rem = 9px,  9/16 = 56,25%
+      }
     }
   }
 
@@ -47,6 +61,8 @@
     font-size: 1.6rem;
     font-weight: 700;
     margin-top: 2.5rem;
+
+
 
 
     // text-decoration: underline;
