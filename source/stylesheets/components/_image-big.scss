@@ -102,4 +102,7 @@
 
 .image-modal__image img {
       height: 49rem;
+  @include respond(phone) { // width < 1200
+      height: 26rem;
+    }
 }

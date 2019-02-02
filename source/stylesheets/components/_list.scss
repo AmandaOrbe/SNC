@@ -6,6 +6,9 @@
       margin-left: 3rem;
       width: 77%;
     }
+    @include respond(portrait) { // width < 1200
+      width: 100%;
+    }
   li{
     min-height: 5rem;
     font-weight: 100;

@@ -9,7 +9,7 @@
     width:24rem; //1rem = 9px,  9/16 = 56,25%
   }
    @include respond(phone) { // width < 1200
-      width:0; //1rem = 9px,  9/16 = 56,25%
+    display: none;
     }
 }
 

@@ -56,6 +56,9 @@
       padding-left: 3rem;
       max-width: 28rem;
     }
+     @include respond(phone) { // width < 1200
+      max-width:22rem;
+    }
 
 
 
