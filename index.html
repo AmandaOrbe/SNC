@@ -7,14 +7,26 @@
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Use the title from a page's frontmatter if it has one -->
     <title></title>
-    <link href="stylesheets/application-9742c8f4.css" rel="stylesheet" />
+    <link href="stylesheets/application-b33641d3.css" rel="stylesheet" />
 
     <link href="images/favicon-120e10c8.png" rel="icon" type="image/png" />
   </head>
   <body>
     
 <div id="home">
-  <div id="sidebar">
+  <div class="navigation">
+   <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+      <label for="navi-toggle" class="navigation__button">
+        <span class="navigation__icon--1">&nbsp;</span>
+        <span class="navigation__icon--2">&nbsp;</span>
+        <span class="navigation__icon--3">&nbsp;</span>
+      </label>
+      <div class="navigation__background">&nbsp;</div>
+
+</div>
+
+
+<div id="sidebar" class= "hidden-phone">
   <div class="sidebar">
     <div class="sidebar__top">
       <div class="sidebar__title">
@@ -135,7 +147,7 @@
 </div>
 
 
-  <div class="main">
+  <div id="main">
     <div class="container">
       <div class="content">
         <div class="header1">
@@ -225,7 +237,7 @@
 
   <div class="image-big__text margin-bottom2">
     <p><strong>Figura 1: Astrocitoma difuso IDH mutado grado II de la OMS diagnosticado en un varón de 51 años que sufrió una crisis epiléptica.  </strong></p>
-    <p>En la RM se identificó una lesión de bordes mal definidos, de localización periférica en el lóbulo frontal derecho, hiperintensa en secuencias FLAIR (A) y T2 (C) e hipointensa en T1 (B). La tumoración no mostraba zonas de edema, necrosis o realce tras la administración del contraste en T1 (D) que indicaran un alto grado histológico de agresividad.</p>
+    <p  class= "image-big__text--paragraph">En la RM se identificó una lesión de bordes mal definidos, de localización periférica en el lóbulo frontal derecho, hiperintensa en secuencias FLAIR (A) y T2 (C) e hipointensa en T1 (B). La tumoración no mostraba zonas de edema, necrosis o realce tras la administración del contraste en T1 (D) que indicaran un alto grado histológico de agresividad.</p>
   </div>
   <i class="fas fa-plus orange image-small__icon"></i>
 </div>
@@ -296,7 +308,7 @@
 
   <div class="image-small__text margin2 margin-bottom2">
     <p><strong>A) Oligodendroglioma IDH1 mutado </strong></p>
-    <p> Con co-deleción 1p/19q, grado II de la OMS. Histologicamente corresponde a una neoplasia de celularidad media, constituida por células de núcleos en general isomorfos, redondeados, con halo claro perinuclear. </p>
+    <p class="image-small__text--paragraph"> Con co-deleción 1p/19q, grado II de la OMS. Histologicamente corresponde a una neoplasia de celularidad media, constituida por células de núcleos en general isomorfos, redondeados, con halo claro perinuclear. </p>
   </div>
 
    <i class="fas fa-plus orange image-small__icon"></i>
@@ -333,7 +345,7 @@
 
   <div class="image-small__text margin2 margin-bottom2">
     <p><strong>B) Oligodendroglioma grado II de la OMS.  </strong></p>
-    <p>Tinción inmunohistoquimica IDH1: positiva. Se observa una tinción citoplasmática de las celulas neoplásica. </p>
+    <p class="image-small__text--paragraph">Tinción inmunohistoquimica IDH1: positiva. Se observa una tinción citoplasmática de las celulas neoplásica. </p>
   </div>
 
    <i class="fas fa-plus orange image-small__icon"></i>
@@ -372,7 +384,7 @@
 
   <div class="image-small__text margin2 margin-bottom2">
     <p><strong>C) Astrocitoma difuso, IDH1 mutado: </strong></p>
-    <p>ATRX mutado, grado II de la OMS. Codeleción 1p/19q negativa. Histologicamente corresponde a una prolfieración neoplasica de celularidad media, que crece sobre un fondo fibrilar fino, constituida por celulas de núcleos ovalados o redondeados, de cromatina fina. </p>
+    <p class="image-small__text--paragraph">ATRX mutado, grado II de la OMS. Codeleción 1p/19q negativa. Histologicamente corresponde a una prolfieración neoplasica de celularidad media, que crece sobre un fondo fibrilar fino, constituida por celulas de núcleos ovalados o redondeados, de cromatina fina. </p>
   </div>
 
    <i class="fas fa-plus orange image-small__icon"></i>
@@ -409,7 +421,7 @@
 
   <div class="image-small__text margin2 margin-bottom2">
     <p><strong> D) Astrocitoma difuso:  </strong></p>
-    <p>IDH1 mutado, codeleción 1p/19q negativa, grado II de la OMS. Se observa, en puntos, un fondo fibrilar, vacuolado, que puede confundir con un oligodendroglioma (de ahí la importancia del estudio molecular para categorizar la neoplasia).</p>
+    <p class="image-small__text--paragraph">IDH1 mutado, codeleción 1p/19q negativa, grado II de la OMS. Se observa, en puntos, un fondo fibrilar, vacuolado, que puede confundir con un oligodendroglioma (de ahí la importancia del estudio molecular para categorizar la neoplasia).</p>
   </div>
 
    <i class="fas fa-plus orange image-small__icon"></i>
@@ -447,12 +459,12 @@
           </p>
          <div class="image-big margin5" data-toggle="modal" data-target=  .algoritmo >
   <div class="image-big__image" >
-    <img src="images/algoritmo_diagnostico-6b4d0eef.png" alt="Algoritmo diagnostico" />
+    <img src="images/algoritmo_diagnostico-599800c4.png" alt="Algoritmo diagnostico" />
   </div>
 
   <div class="image-big__text margin-bottom2">
     <p><strong>Figura 3: Algoritmo diagnóstico molecular de los gliomas de bajo grado. (Sepúlveda-Sánchez et al., 2018) </strong></p>
-    <p></p>
+    <p  class= "image-big__text--paragraph"></p>
   </div>
   <i class="fas fa-plus orange image-small__icon"></i>
 </div>
@@ -470,7 +482,7 @@
         </div>
       <div class="image-modal" >
         <div class="image-modal__image" >
-          <img src="images/algoritmo_diagnostico-6b4d0eef.png" alt="Algoritmo diagnostico" />
+          <img src="images/algoritmo_diagnostico-599800c4.png" alt="Algoritmo diagnostico" />
         </div>
         <div class="image-modal__text">
           <p><strong>Figura 3: Algoritmo diagnóstico molecular de los gliomas de bajo grado. (Sepúlveda-Sánchez et al., 2018) </strong></p>
@@ -521,7 +533,7 @@
 
   <div class="image-big__text margin-bottom2">
     <p><strong>Figura 3: Imagen de dosimetría IMRT de un glioma de bajo grado </strong></p>
-    <p></p>
+    <p  class= "image-big__text--paragraph"></p>
   </div>
   <i class="fas fa-plus orange image-small__icon"></i>
 </div>
@@ -612,7 +624,9 @@
         <span class="form__orange1"></span>
         <span class="form__orange2"></span>
         <span class="form__radio-button"></span>
-        <h5>ATRX y TERT</h5>
+        <div class="form__radio-label__text">
+          <h5>ATRX y TERT</h5>
+        </div>
       </label>
 
     </div>
@@ -623,7 +637,9 @@
         <span class="form__orange1"></span>
         <span class="form__orange2"></span>
         <span class="form__radio-button"></span>
-        <h5>TERT y p53</h5>
+        <div class="form__radio-label__text">
+          <h5>TERT y p53</h5>
+        </div>
       </label>
 
     </div>
@@ -634,7 +650,9 @@
         <span class="form__orange1"></span>
         <span class="form__orange2"></span>
         <span class="form__radio-button"></span>
-        <h5>Codelección 1p/19q y mutación de IDH</h5>
+        <div class="form__radio-label__text">
+          <h5>Codelección 1p/19q y mutación de IDH</h5>
+        </div>
       </label>
 
     </div>
@@ -645,7 +663,9 @@
         <span class="form__orange1"></span>
         <span class="form__orange2"></span>
         <span class="form__radio-button"></span>
-        <h5>Mutación IDH y BRAF</h5>
+        <div class="form__radio-label__text">
+          <h5>Mutación IDH y BRAF</h5>
+        </div>
       </label>
 
     </div>
@@ -687,7 +707,9 @@
         <span class="form__orange1"></span>
         <span class="form__orange2"></span>
         <span class="form__radio-button"></span>
-        <h5>Bevacizumab</h5>
+        <div class="form__radio-label__text">
+          <h5>Bevacizumab</h5>
+        </div>
       </label>
 
     </div>
@@ -698,7 +720,9 @@
         <span class="form__orange1"></span>
         <span class="form__orange2"></span>
         <span class="form__radio-button"></span>
-        <h5>Temozolomida</h5>
+        <div class="form__radio-label__text">
+          <h5>Temozolomida</h5>
+        </div>
       </label>
 
     </div>
@@ -709,7 +733,9 @@
         <span class="form__orange1"></span>
         <span class="form__orange2"></span>
         <span class="form__radio-button"></span>
-        <h5>Procarbacina, lomustina y vincristina</h5>
+        <div class="form__radio-label__text">
+          <h5>Procarbacina, lomustina y vincristina</h5>
+        </div>
       </label>
 
     </div>
@@ -720,7 +746,9 @@
         <span class="form__orange1"></span>
         <span class="form__orange2"></span>
         <span class="form__radio-button"></span>
-        <h5>Nivolumab</h5>
+        <div class="form__radio-label__text">
+          <h5>Nivolumab</h5>
+        </div>
       </label>
 
     </div>
@@ -900,7 +928,9 @@
         <span class="form__orange1"></span>
         <span class="form__orange2"></span>
         <span class="form__radio-button"></span>
-        <h5>Observación y tratamiento a la recaída</h5>
+        <div class="form__radio-label__text">
+          <h5>Observación y tratamiento a la recaída</h5>
+        </div>
       </label>
 
     </div>
@@ -911,7 +941,9 @@
         <span class="form__orange1"></span>
         <span class="form__orange2"></span>
         <span class="form__radio-button"></span>
-        <h5>Quimioterapia basada en temozolomida y reservar la radioterapia  a la recaída</h5>
+        <div class="form__radio-label__text">
+          <h5>Quimioterapia basada en temozolomida y reservar la radioterapia  a la recaída</h5>
+        </div>
       </label>
 
     </div>
@@ -922,7 +954,9 @@
         <span class="form__orange1"></span>
         <span class="form__orange2"></span>
         <span class="form__radio-button"></span>
-        <h5>Radioterapia seguido de quimioterapia </h5>
+        <div class="form__radio-label__text">
+          <h5>Radioterapia seguido de quimioterapia </h5>
+        </div>
       </label>
 
     </div>
@@ -946,7 +980,9 @@
           </div>
         </div>
       </div>
-
+<br>
+<br>
+<br>
       <div id="pregunta4">
       <h3 class="margin7"> Continuación del caso </h3>
       <p class="margin5"> El paciente, tras valorar todas las opciones, decide realizar tratamiento completo.  </p>
@@ -959,7 +995,9 @@
         <span class="form__orange1"></span>
         <span class="form__orange2"></span>
         <span class="form__radio-button"></span>
-        <h5>Radioterapia 60 Gy seguido de PCV x 6 ciclos</h5>
+        <div class="form__radio-label__text">
+          <h5>Radioterapia 60 Gy seguido de PCV x 6 ciclos</h5>
+        </div>
       </label>
 
     </div>
@@ -970,7 +1008,9 @@
         <span class="form__orange1"></span>
         <span class="form__orange2"></span>
         <span class="form__radio-button"></span>
-        <h5>Radioterapia 50.4 - 54 Gy seguido de temozolomida 150 mg/m2</h5>
+        <div class="form__radio-label__text">
+          <h5>Radioterapia 50.4 - 54 Gy seguido de temozolomida 150 mg/m2</h5>
+        </div>
       </label>
 
     </div>
@@ -981,7 +1021,9 @@
         <span class="form__orange1"></span>
         <span class="form__orange2"></span>
         <span class="form__radio-button"></span>
-        <h5>Radioterapia 50.4 – 54 Gy seguido de PCV x 6 ciclos</h5>
+        <div class="form__radio-label__text">
+          <h5>Radioterapia 50.4 – 54 Gy seguido de PCV x 6 ciclos</h5>
+        </div>
       </label>
 
     </div>
@@ -1019,6 +1061,6 @@
   </div>
 </div>
 
-    <script src="javascripts/application-24c87741.js"></script>
+    <script src="javascripts/application-279c372c.js"></script>
   </body>
 </html>
