@@ -305,7 +305,7 @@ window.addEventListener('load', function(){
  window.addEventListener('scroll', function(){
   var percentage = ( window.scrollY)/((document.querySelector("#home").scrollHeight) - window.innerHeight );
   document.querySelector(".sidebar__percentage__bar--2").style.width = percentage * 20.7+"rem"
-  document.getElementById("%number").innerText = Math.round(percentage*100) + "% completado";
+  document.getElementById("%number").innerText = Math.round(percentage*100) + "%  completado";
 });
 
 
@@ -333,6 +333,40 @@ const evaluacion = document.getElementById('evaluacion-title');
   });
 
 
+
+
+
+// ************************************ PHONE MENU ****************************
+
+
+const phoneButton = document.querySelector(".navigation__button");
+const sidebarItems = document.querySelectorAll(".sidebar__content__chapter");
+
+function toggleSidebar(){
+  document.getElementById("sidebar").classList.toggle("hidden-phone");
+  document.getElementById("main").classList.toggle("hidden-phone");
+  document.getElementById("main").classList.toggle("hidden-phone-main");
+  document.querySelector(".navigation__icon--1").classList.toggle("navigation__icon--1x");
+  document.querySelector(".navigation__icon--3").classList.toggle("navigation__icon--3x");
+  document.querySelector(".navigation__icon--2").classList.toggle("navigation__icon--2x");
+  document.querySelector(".navigation__background").classList.toggle("navigation__background--small");
+
+}
+
+phoneButton.addEventListener("click", function(event){
+  toggleSidebar();
+});
+
+
+sidebarItems.forEach(function(item){
+  item.addEventListener("click", function(event){
+    toggleSidebar();
+  });
+});
+
+document.getElementById("side_bibliografia").addEventListener("click", function(event){
+  toggleSidebar();
+});
 
 
 

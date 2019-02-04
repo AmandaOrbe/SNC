@@ -8,14 +8,20 @@
 
 }
 
-.main{
+#main{
+  transition: .5s ease;
   width:  calc(100% - 28rem);
-   @include respond(portrait) { // width < 1200
+    @include respond(portrait) { // width < 1200
       width:  calc(100% - 24rem);
     }
-   background-color: white;
-       box-shadow: $box-shadow;
 
+    @include respond(phone) { // width < 1200
+    width:calc(100% - 3rem);
+    left: 3rem;
+    }
+
+  background-color: white;
+  box-shadow: $box-shadow;
   position: absolute;
   right: 0;
   display: flex;
@@ -23,3 +29,11 @@
   justify-content: space-around;
 }
 
+.hidden-phone-main{
+  // transition-delay: .5s;
+    @include respond(phone) { // width < 1200
+    right: 0 !important;
+    left: auto !important;
+    // display: none !important;
+    }
+}
