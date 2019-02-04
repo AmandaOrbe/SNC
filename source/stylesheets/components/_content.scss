@@ -72,12 +72,6 @@
     font-size: 1.6rem;
     font-weight: 700;
     margin-top: 2.5rem;
-
-
-
-
-    // text-decoration: underline;
-
   }
 
 
@@ -89,14 +83,14 @@
 
   }
 
+  a{
+    word-break: break-all;
+    color: $orange;
+  }
+
   .biblio{
     line-height: 2.8rem;
     text-indent: -5rem;
-    //  @include respond(portrait) { // width < 1200
-    //    margin: 6rem;
-    //     width: auto;
-    // }
-
   }
 
   .margin7{
