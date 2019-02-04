@@ -99,6 +99,9 @@
   max-height: 0;
   overflow: hidden;
   transition: all 1s ease;
+   @include respond(phone) {
+    transform: translateY(-9rem);
+  }
 
   h4{
   color: $orange;
