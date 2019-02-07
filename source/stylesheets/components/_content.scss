@@ -57,15 +57,16 @@
     color: black;
     font-family: $serif-font;
     font-weight: 100;
-    font-size: 2.4rem;
+    font-size: 2.2rem;
     border-bottom: 1px solid $orange;
     width: max-content;
     padding-bottom: 1rem;
-    text-indent: 5rem;
+    margin-left: 5rem;
+    padding-right: 5rem;
      @include respond(portrait) {
       text-indent: 0rem;
-      padding-left: 3rem;
       max-width: 28rem;
+      margin-left: 3rem;
     }
      @include respond(phone) { // width < 1200
       max-width:22rem;
