@@ -13,7 +13,7 @@ focalidad: Focalidad neurológica
 focalidad_body: Debidos a la localización específica del tumor, se producirá un déficit neurológico concreto motor, sensitivo o mixto.
 epilepsia: Epilepsia
 epilepsia_body: Son uno de los síntomas más frecuentes en gliomas de bajo grado, siendo un síntoma que llega hasta el 70-80% de los pacientes en algún momento de su evolución, siendo más frecuente en oligodendrogliomas que en astrocitomas. En el caso de los gliomas de bajo grado, debido a su lento crecimiento, puede preceder años al diagnóstico del tumor.
-incidencia_span: Los gliomas de bajo grado corresponden a aproximadamente el 15% de los tumores primarios cerebrales en el adulto, y tienen unpico de incidenciaen torno a los 35-45 años
+incidencia_span: Los gliomas de bajo grado corresponden a aproximadamente el 15% de los tumores primarios cerebrales en el adulto, y tienen un pico de incidenciaen torno a los 35-45 años
 incidencia_text: '(Pouratian & Schiff, 2010). Su pronóstico es mejor que el de los gliomas anaplásicos y glioblastomas, pudiendo incluso en casos muy seleccionados mantener una actitud expectante. La reciente clasificación molecular ha afinado estos factores pronósticos, si bien se siguen considerando como factores de buen pronóstico los siguientes (deben cumplirse todos) (Sepúlveda-Sánchez et al., 2018):'
 edad: Edad < 40 años
 tamaño: Tamaño tumoral preoperatorio < 4-6cm
@@ -37,7 +37,7 @@ figura_2_c_title: "C) Astrocitoma difuso, IDH1 mutado:"
 figura_2_c_text: "ATRX mutado, grado II de la OMS. Codeleción 1p/19q negativa. Histologicamente corresponde a una prolfieración neoplasica de celularidad media, que crece sobre un fondo fibrilar fino, constituida por celulas de núcleos ovalados o redondeados, de cromatina fina. "
 figura_2_d_title: " D) Astrocitoma difuso: "
 figura_2_d_text: "IDH1 mutado, codeleción 1p/19q negativa, grado II de la OMS. Se observa, en puntos, un fondo fibrilar, vacuolado, que puede confundir con un oligodendroglioma (de ahí la importancia del estudio molecular para categorizar la neoplasia)."
-independientemente: "Independientemente de que la primera aproximación siga siendo el análisis morfológico, a día de hoy es imprescindible completar el estudio de cara al diagnóstico definitivo y a la planificación del tratamiento mediante técnicas moleculares"
+independientemente: "Independientemente de que la primera aproximación siga siendo el análisis morfológico, a día de hoy es imprescindible completar el estudio de cara al diagnóstico definitivo y a la planificación del tratamiento mediante técnicas moleculares."
 imprescindible: Es imprescindible contar con la determinación de mutación de IDH (primero con la inmunotinción, reservando la secuenciación para casos negativos), la tinción de ATRX (si bien esta es más secundaria) y la codelección de 1p19q.
 marcadores: Estos marcadores nos darán información diagnóstica y pronóstica (la mutación de IDH y la codelección 1p19q son marcadores de mejor pronóstico). En el siguiente esquema, extraído de las guías SEOM 2017 sobre diagnóstico y tratamiento de los gliomas de bajo grado, se resume el algoritmo diagnóstico de los gliomas de bajo grado
 algoritmo_title: "Figura 3: Algoritmo diagnóstico molecular de los gliomas de bajo grado. (Sepúlveda-Sánchez et al., 2018)"
